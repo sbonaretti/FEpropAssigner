@@ -1,0 +1,207 @@
+\hypertarget{classassignment_1_1_interpolator3_d}{
+\section{assignment::Interpolator3D Class Reference}
+\label{classassignment_1_1_interpolator3_d}\index{assignment::Interpolator3D@{assignment::Interpolator3D}}
+}
+
+
+Interpolates a \hyperlink{structmesh_1_1_mesh_1_1_point}{mesh::Mesh::Point} inside a CTImage.  
+
+
+
+
+{\ttfamily \#include $<$Interpolator3D.h$>$}
+
+
+
+Inheritance diagram for assignment::Interpolator3D:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classassignment_1_1_interpolator3_d__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for assignment::Interpolator3D:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=385pt]{classassignment_1_1_interpolator3_d__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classassignment_1_1_interpolator3_d_a54645d60de51db0881e97c085e0a4c75}{Interpolator3D} (QSharedPointer$<$ \hyperlink{classctimage_1_1_c_t_image}{CTImage} $>$ \hyperlink{classassignment_1_1_interpolator3_d_a7a9b457f60bd12527e0402fcab391bf3}{ctImage}, double $\ast$\hyperlink{classassignment_1_1_interpolator3_d_a061525dc9657ecd0aac93d647398e01f}{values})
+\begin{DoxyCompactList}\small\item\em Creates a new interpolator with a given \hyperlink{classctimage_1_1_c_t_image}{ctimage::CTImage} and the values used for the interpolation. \item\end{DoxyCompactList}\item 
+virtual double \hyperlink{classassignment_1_1_interpolator3_d_ac6ed5447418b7980d5ad2f12e853b35f}{getValue} (\hyperlink{structmesh_1_1_mesh_1_1_point}{Mesh::Point} $\ast$p)=0
+\begin{DoxyCompactList}\small\item\em Gets the interpolated value for a specified \hyperlink{structmesh_1_1_mesh_1_1_point}{mesh::Mesh::Point}. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classassignment_1_1_interpolator3_d_a2fd5d0ea20ee345a485d6b6aba546bf7}{getIndex} (int x, int y, int z)
+\begin{DoxyCompactList}\small\item\em Gets the index for the values array, given xyz coordinate indexes. \item\end{DoxyCompactList}\item 
+void \hyperlink{classassignment_1_1_interpolator3_d_a7f1152d0026def40f616d2c8c33844fd}{setUpCube} (\hyperlink{structmesh_1_1_mesh_1_1_point}{Mesh::Point} $\ast$p)
+\begin{DoxyCompactList}\small\item\em Sets the members for the cube surrounding the current interpolation point. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classassignment_1_1_interpolator3_d_a7a9b457f60bd12527e0402fcab391bf3}{
+QSharedPointer$<$ \hyperlink{classctimage_1_1_c_t_image}{CTImage} $>$ \hyperlink{classassignment_1_1_interpolator3_d_a7a9b457f60bd12527e0402fcab391bf3}{ctImage}}
+\label{classassignment_1_1_interpolator3_d_a7a9b457f60bd12527e0402fcab391bf3}
+
+\begin{DoxyCompactList}\small\item\em A pointer to the \hyperlink{classctimage_1_1_c_t_image}{ctimage::CTImage}. \item\end{DoxyCompactList}\item 
+\hypertarget{classassignment_1_1_interpolator3_d_a061525dc9657ecd0aac93d647398e01f}{
+double $\ast$ \hyperlink{classassignment_1_1_interpolator3_d_a061525dc9657ecd0aac93d647398e01f}{values}}
+\label{classassignment_1_1_interpolator3_d_a061525dc9657ecd0aac93d647398e01f}
+
+\begin{DoxyCompactList}\small\item\em The values to be used for the interpolation. \item\end{DoxyCompactList}\item 
+\hypertarget{classassignment_1_1_interpolator3_d_afb656ddf8789b483a8570f7a93985c0c}{
+double \hyperlink{classassignment_1_1_interpolator3_d_afb656ddf8789b483a8570f7a93985c0c}{x0}}
+\label{classassignment_1_1_interpolator3_d_afb656ddf8789b483a8570f7a93985c0c}
+
+\begin{DoxyCompactList}\small\item\em The first edge x-\/coordinate of the cube surrounding the current interpolation point. \item\end{DoxyCompactList}\item 
+\hypertarget{classassignment_1_1_interpolator3_d_ab8f3111100189b5730621f77fe54467e}{
+double \hyperlink{classassignment_1_1_interpolator3_d_ab8f3111100189b5730621f77fe54467e}{x1}}
+\label{classassignment_1_1_interpolator3_d_ab8f3111100189b5730621f77fe54467e}
+
+\begin{DoxyCompactList}\small\item\em The second x-\/coordinate of the cube surrounding the current interpolation point. \item\end{DoxyCompactList}\item 
+\hypertarget{classassignment_1_1_interpolator3_d_a42b29917bd0265791560f4ddc697f7ea}{
+double \hyperlink{classassignment_1_1_interpolator3_d_a42b29917bd0265791560f4ddc697f7ea}{y0}}
+\label{classassignment_1_1_interpolator3_d_a42b29917bd0265791560f4ddc697f7ea}
+
+\begin{DoxyCompactList}\small\item\em The first edge y-\/coordinate of the cube surrounding the current interpolation point. \item\end{DoxyCompactList}\item 
+\hypertarget{classassignment_1_1_interpolator3_d_ad5cd282be05bb14625807880ed3fc322}{
+double \hyperlink{classassignment_1_1_interpolator3_d_ad5cd282be05bb14625807880ed3fc322}{y1}}
+\label{classassignment_1_1_interpolator3_d_ad5cd282be05bb14625807880ed3fc322}
+
+\begin{DoxyCompactList}\small\item\em The second edge y-\/coordinate of the cube surrounding the current interpolation point. \item\end{DoxyCompactList}\item 
+\hypertarget{classassignment_1_1_interpolator3_d_a9a1fcc6b430714b7171ff2e41a8ced79}{
+double \hyperlink{classassignment_1_1_interpolator3_d_a9a1fcc6b430714b7171ff2e41a8ced79}{z0}}
+\label{classassignment_1_1_interpolator3_d_a9a1fcc6b430714b7171ff2e41a8ced79}
+
+\begin{DoxyCompactList}\small\item\em The first edge z-\/coordinate of the cube surrounding the current interpolation point. \item\end{DoxyCompactList}\item 
+\hypertarget{classassignment_1_1_interpolator3_d_a98c11cc781d0338f6049e186011988b3}{
+double \hyperlink{classassignment_1_1_interpolator3_d_a98c11cc781d0338f6049e186011988b3}{z1}}
+\label{classassignment_1_1_interpolator3_d_a98c11cc781d0338f6049e186011988b3}
+
+\begin{DoxyCompactList}\small\item\em The second edge z-\/coordinate of the cube surrounding the current interpolation point. \item\end{DoxyCompactList}\item 
+\hypertarget{classassignment_1_1_interpolator3_d_a5f5958cc28894f071c910f3a6950b4a7}{
+int \hyperlink{classassignment_1_1_interpolator3_d_a5f5958cc28894f071c910f3a6950b4a7}{x0Index}}
+\label{classassignment_1_1_interpolator3_d_a5f5958cc28894f071c910f3a6950b4a7}
+
+\begin{DoxyCompactList}\small\item\em The first x-\/coordinate edge index value of the cube surrounding the current interpolation point. \item\end{DoxyCompactList}\item 
+\hypertarget{classassignment_1_1_interpolator3_d_ae1801f9719cc067f46cc4dbad850584e}{
+int \hyperlink{classassignment_1_1_interpolator3_d_ae1801f9719cc067f46cc4dbad850584e}{x1Index}}
+\label{classassignment_1_1_interpolator3_d_ae1801f9719cc067f46cc4dbad850584e}
+
+\begin{DoxyCompactList}\small\item\em The second x-\/coordinate edge index value of the cube surrounding the current interpolation point. \item\end{DoxyCompactList}\item 
+\hypertarget{classassignment_1_1_interpolator3_d_a510c7513371c0a901b5d382dda2eb522}{
+int \hyperlink{classassignment_1_1_interpolator3_d_a510c7513371c0a901b5d382dda2eb522}{y0Index}}
+\label{classassignment_1_1_interpolator3_d_a510c7513371c0a901b5d382dda2eb522}
+
+\begin{DoxyCompactList}\small\item\em The first y-\/coordinate edge index value of the cube surrounding the current interpolation point. \item\end{DoxyCompactList}\item 
+\hypertarget{classassignment_1_1_interpolator3_d_a7915e8474ca9f2d24a6db89a4e6392aa}{
+int \hyperlink{classassignment_1_1_interpolator3_d_a7915e8474ca9f2d24a6db89a4e6392aa}{y1Index}}
+\label{classassignment_1_1_interpolator3_d_a7915e8474ca9f2d24a6db89a4e6392aa}
+
+\begin{DoxyCompactList}\small\item\em The second y-\/coordinate edge index value of the cube surrounding the current interpolation point. \item\end{DoxyCompactList}\item 
+\hypertarget{classassignment_1_1_interpolator3_d_a35aef5fb165edabee98473cce828f26a}{
+int \hyperlink{classassignment_1_1_interpolator3_d_a35aef5fb165edabee98473cce828f26a}{z0Index}}
+\label{classassignment_1_1_interpolator3_d_a35aef5fb165edabee98473cce828f26a}
+
+\begin{DoxyCompactList}\small\item\em The first z-\/coordinate edge index value of the cube surrounding the current interpolation point. \item\end{DoxyCompactList}\item 
+\hypertarget{classassignment_1_1_interpolator3_d_a5160d595a9c9884e38b7d8e64d01f9b8}{
+int \hyperlink{classassignment_1_1_interpolator3_d_a5160d595a9c9884e38b7d8e64d01f9b8}{z1Index}}
+\label{classassignment_1_1_interpolator3_d_a5160d595a9c9884e38b7d8e64d01f9b8}
+
+\begin{DoxyCompactList}\small\item\em The second z-\/coordinate edge index value of the cube surrounding the current interpolation point. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interpolates a \hyperlink{structmesh_1_1_mesh_1_1_point}{mesh::Mesh::Point} inside a CTImage. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classassignment_1_1_interpolator3_d_a54645d60de51db0881e97c085e0a4c75}{
+\index{assignment::Interpolator3D@{assignment::Interpolator3D}!Interpolator3D@{Interpolator3D}}
+\index{Interpolator3D@{Interpolator3D}!assignment::Interpolator3D@{assignment::Interpolator3D}}
+\subsubsection[{Interpolator3D}]{\setlength{\rightskip}{0pt plus 5cm}assignment::Interpolator3D::Interpolator3D (
+\begin{DoxyParamCaption}
+\item[{QSharedPointer$<$ {\bf CTImage} $>$}]{ ctImage, }
+\item[{double $\ast$}]{ values}
+\end{DoxyParamCaption}
+)}}
+\label{classassignment_1_1_interpolator3_d_a54645d60de51db0881e97c085e0a4c75}
+
+
+Creates a new interpolator with a given \hyperlink{classctimage_1_1_c_t_image}{ctimage::CTImage} and the values used for the interpolation. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em ctImage}]The \hyperlink{classctimage_1_1_c_t_image}{ctimage::CTImage}, which is used only for morphologic information. The values of the \hyperlink{classctimage_1_1_c_t_image}{ctimage::CTImage} are not used for the interpolation \item[{\em values}]The values used for the interpolation. The values array needs to be the size of the pixel count of the \hyperlink{classctimage_1_1_c_t_image}{ctimage::CTImage} \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classassignment_1_1_interpolator3_d_a2fd5d0ea20ee345a485d6b6aba546bf7}{
+\index{assignment::Interpolator3D@{assignment::Interpolator3D}!getIndex@{getIndex}}
+\index{getIndex@{getIndex}!assignment::Interpolator3D@{assignment::Interpolator3D}}
+\subsubsection[{getIndex}]{\setlength{\rightskip}{0pt plus 5cm}int assignment::Interpolator3D::getIndex (
+\begin{DoxyParamCaption}
+\item[{int}]{ x, }
+\item[{int}]{ y, }
+\item[{int}]{ z}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classassignment_1_1_interpolator3_d_a2fd5d0ea20ee345a485d6b6aba546bf7}
+
+
+Gets the index for the values array, given xyz coordinate indexes. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em x}]x index \item[{\em y}]y index \item[{\em z}]z index \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The index value 
+\end{DoxyReturn}
+\hypertarget{classassignment_1_1_interpolator3_d_ac6ed5447418b7980d5ad2f12e853b35f}{
+\index{assignment::Interpolator3D@{assignment::Interpolator3D}!getValue@{getValue}}
+\index{getValue@{getValue}!assignment::Interpolator3D@{assignment::Interpolator3D}}
+\subsubsection[{getValue}]{\setlength{\rightskip}{0pt plus 5cm}virtual double assignment::Interpolator3D::getValue (
+\begin{DoxyParamCaption}
+\item[{{\bf Mesh::Point} $\ast$}]{ p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classassignment_1_1_interpolator3_d_ac6ed5447418b7980d5ad2f12e853b35f}
+
+
+Gets the interpolated value for a specified \hyperlink{structmesh_1_1_mesh_1_1_point}{mesh::Mesh::Point}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em p}]The point to be interpolated \end{DoxyParams}
+
+
+Implemented in \hyperlink{classassignment_1_1_tricubic_interpolator_ac06870dcde750c17f2d7ce02b87cbd9c}{assignment::TricubicInterpolator}, \hyperlink{classassignment_1_1_trilinear_interpolator_a0972e2f1ebd828b832e94760c34b80c6}{assignment::TrilinearInterpolator}, and \hyperlink{classtest_1_1_interpolator3_d_mock_aff76393fb25a4a23db2039b074af75b2}{test::Interpolator3DMock}.
+
+\hypertarget{classassignment_1_1_interpolator3_d_a7f1152d0026def40f616d2c8c33844fd}{
+\index{assignment::Interpolator3D@{assignment::Interpolator3D}!setUpCube@{setUpCube}}
+\index{setUpCube@{setUpCube}!assignment::Interpolator3D@{assignment::Interpolator3D}}
+\subsubsection[{setUpCube}]{\setlength{\rightskip}{0pt plus 5cm}void assignment::Interpolator3D::setUpCube (
+\begin{DoxyParamCaption}
+\item[{{\bf Mesh::Point} $\ast$}]{ p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classassignment_1_1_interpolator3_d_a7f1152d0026def40f616d2c8c33844fd}
+
+
+Sets the members for the cube surrounding the current interpolation point. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em p}]The point to be interpolated \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+assignment/Interpolator3D.h\item 
+assignment/Interpolator3D.cxx\end{DoxyCompactItemize}

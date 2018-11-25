@@ -1,0 +1,141 @@
+\hypertarget{classctimage_1_1_volume_corrector}{
+\section{ctimage::VolumeCorrector Class Reference}
+\label{classctimage_1_1_volume_corrector}\index{ctimage::VolumeCorrector@{ctimage::VolumeCorrector}}
+}
+
+
+Extrudes a \hyperlink{classctimage_1_1_c_t_image}{ctimage::CTImage} in order to completely cover a \hyperlink{classmesh_1_1_mesh}{mesh::Mesh}.  
+
+
+
+
+{\ttfamily \#include $<$VolumeCorrector.h$>$}
+
+
+
+Collaboration diagram for ctimage::VolumeCorrector:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classctimage_1_1_volume_corrector__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structctimage_1_1_volume_corrector_1_1_line}{Line}
+\begin{DoxyCompactList}\small\item\em A connection of two points. \item\end{DoxyCompactList}\item 
+struct \hyperlink{structctimage_1_1_volume_corrector_1_1_point2_d}{Point2D}
+\begin{DoxyCompactList}\small\item\em A 2-\/Dimensional point. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classctimage_1_1_volume_corrector_a38ceb67dfbd2ff41d8c87c1c5853a3b3}{VolumeCorrector} (QSharedPointer$<$ \hyperlink{classctimage_1_1_c_t_image}{CTImage} $>$ ctImage, QSharedPointer$<$ \hyperlink{classmesh_1_1_mesh}{mesh::Mesh} $>$ \hyperlink{classctimage_1_1_volume_corrector_a619b8444da48d717b5314a04b39fc6cd}{mesh}, int)
+\item 
+QSharedPointer$<$ \hyperlink{classctimage_1_1_c_t_image}{CTImage} $>$ \hyperlink{classctimage_1_1_volume_corrector_ae7766967e85dd56a1e0809fd75365557}{getExtrudedCTImage} ()
+\begin{DoxyCompactList}\small\item\em Returns the extruded \hyperlink{classctimage_1_1_c_t_image}{ctimage::CTImage}. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classctimage_1_1_volume_corrector_ae1891b19fec618b507d20b5578e75b72}{
+void \hyperlink{classctimage_1_1_volume_corrector_ae1891b19fec618b507d20b5578e75b72}{extrude} ()}
+\label{classctimage_1_1_volume_corrector_ae1891b19fec618b507d20b5578e75b72}
+
+\begin{DoxyCompactList}\small\item\em Run the extrusion routine. \item\end{DoxyCompactList}\item 
+void \hyperlink{classctimage_1_1_volume_corrector_ac596c5e63de666f0c12459f7c473d14e}{inTetrahedron} (bool $\ast$)
+\begin{DoxyCompactList}\small\item\em Fills a bool array which is true where the points are inside a tetrahedron. \item\end{DoxyCompactList}\item 
+\hypertarget{classctimage_1_1_volume_corrector_a060febb7b26980a6075f37b5c119cd8e}{
+void {\bfseries chopSurface} (bool $\ast$ctBool, bool $\ast$ctSlim, bool $\ast$ctPeeled)}
+\label{classctimage_1_1_volume_corrector_a060febb7b26980a6075f37b5c119cd8e}
+
+\item 
+\hypertarget{classctimage_1_1_volume_corrector_a55b87ef81e929c87b8b0c46e4cc4cc62}{
+void {\bfseries extendSurface} (\hyperlink{classctimage_1_1_c_t_image_ab3bf32a276d168a705973d8d6c698cec}{CTImage::CTPixelType} $\ast$E, bool $\ast$c, \hyperlink{classctimage_1_1_c_t_image_ab3bf32a276d168a705973d8d6c698cec}{CTImage::CTPixelType} $\ast$Ex, bool $\ast$cx)}
+\label{classctimage_1_1_volume_corrector_a55b87ef81e929c87b8b0c46e4cc4cc62}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classctimage_1_1_volume_corrector_ad58e1281952791cc0508ba7e531d335a}{
+int \hyperlink{classctimage_1_1_volume_corrector_ad58e1281952791cc0508ba7e531d335a}{extrusionCount}}
+\label{classctimage_1_1_volume_corrector_ad58e1281952791cc0508ba7e531d335a}
+
+\begin{DoxyCompactList}\small\item\em The iteration count for the image extrusion. \item\end{DoxyCompactList}\item 
+\hypertarget{classctimage_1_1_volume_corrector_a619b8444da48d717b5314a04b39fc6cd}{
+QSharedPointer$<$ \hyperlink{classmesh_1_1_mesh}{mesh::Mesh} $>$ \hyperlink{classctimage_1_1_volume_corrector_a619b8444da48d717b5314a04b39fc6cd}{mesh}}
+\label{classctimage_1_1_volume_corrector_a619b8444da48d717b5314a04b39fc6cd}
+
+\begin{DoxyCompactList}\small\item\em The mesh that corresponds to the specified \hyperlink{classctimage_1_1_c_t_image}{ctimage::CTImage}. \item\end{DoxyCompactList}\item 
+\hypertarget{classctimage_1_1_volume_corrector_aeba98b07c027b1d9c1e8d6219aaee468}{
+QSharedPointer$<$ \hyperlink{classctimage_1_1_c_t_image}{CTImage} $>$ \hyperlink{classctimage_1_1_volume_corrector_aeba98b07c027b1d9c1e8d6219aaee468}{extrudedCTImage}}
+\label{classctimage_1_1_volume_corrector_aeba98b07c027b1d9c1e8d6219aaee468}
+
+\begin{DoxyCompactList}\small\item\em The extruded \hyperlink{classctimage_1_1_c_t_image}{ctimage::CTImage}. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Extrudes a \hyperlink{classctimage_1_1_c_t_image}{ctimage::CTImage} in order to completely cover a \hyperlink{classmesh_1_1_mesh}{mesh::Mesh}. \begin{DoxyWarning}{Warning}
+This class doesn't alter the provided \hyperlink{classctimage_1_1_c_t_image}{ctimage::CTImage}. It instead creates a new \hyperlink{classctimage_1_1_c_t_image}{ctimage::CTImage} 
+\end{DoxyWarning}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classctimage_1_1_volume_corrector_a38ceb67dfbd2ff41d8c87c1c5853a3b3}{
+\index{ctimage::VolumeCorrector@{ctimage::VolumeCorrector}!VolumeCorrector@{VolumeCorrector}}
+\index{VolumeCorrector@{VolumeCorrector}!ctimage::VolumeCorrector@{ctimage::VolumeCorrector}}
+\subsubsection[{VolumeCorrector}]{\setlength{\rightskip}{0pt plus 5cm}ctimage::VolumeCorrector::VolumeCorrector (
+\begin{DoxyParamCaption}
+\item[{QSharedPointer$<$ {\bf CTImage} $>$}]{ ctImage, }
+\item[{QSharedPointer$<$ {\bf mesh::Mesh} $>$}]{ mesh, }
+\item[{int}]{ extrusionCount}
+\end{DoxyParamCaption}
+)}}
+\label{classctimage_1_1_volume_corrector_a38ceb67dfbd2ff41d8c87c1c5853a3b3}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em ctImage}]The \hyperlink{classctimage_1_1_c_t_image}{ctimage::CTImage} to be extruded \item[{\em mesh}]The corresponding \hyperlink{classmesh_1_1_mesh}{mesh::Mesh} \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classctimage_1_1_volume_corrector_ae7766967e85dd56a1e0809fd75365557}{
+\index{ctimage::VolumeCorrector@{ctimage::VolumeCorrector}!getExtrudedCTImage@{getExtrudedCTImage}}
+\index{getExtrudedCTImage@{getExtrudedCTImage}!ctimage::VolumeCorrector@{ctimage::VolumeCorrector}}
+\subsubsection[{getExtrudedCTImage}]{\setlength{\rightskip}{0pt plus 5cm}QSharedPointer$<$ {\bf CTImage} $>$ ctimage::VolumeCorrector::getExtrudedCTImage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classctimage_1_1_volume_corrector_ae7766967e85dd56a1e0809fd75365557}
+
+
+Returns the extruded \hyperlink{classctimage_1_1_c_t_image}{ctimage::CTImage}. 
+
+\begin{DoxyReturn}{Returns}
+The extruded \hyperlink{classctimage_1_1_c_t_image}{ctimage::CTImage} 
+\end{DoxyReturn}
+\hypertarget{classctimage_1_1_volume_corrector_ac596c5e63de666f0c12459f7c473d14e}{
+\index{ctimage::VolumeCorrector@{ctimage::VolumeCorrector}!inTetrahedron@{inTetrahedron}}
+\index{inTetrahedron@{inTetrahedron}!ctimage::VolumeCorrector@{ctimage::VolumeCorrector}}
+\subsubsection[{inTetrahedron}]{\setlength{\rightskip}{0pt plus 5cm}void ctimage::VolumeCorrector::inTetrahedron (
+\begin{DoxyParamCaption}
+\item[{bool $\ast$}]{ ctBool}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classctimage_1_1_volume_corrector_ac596c5e63de666f0c12459f7c473d14e}
+
+
+Fills a bool array which is true where the points are inside a tetrahedron. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em The}]bool array that will be filled \end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+The bool array must be the size of the amount of pixels in the \hyperlink{classctimage_1_1_c_t_image}{ctimage::CTImage} 
+\end{DoxyWarning}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+ctimage/VolumeCorrector.h\item 
+ctimage/VolumeCorrector.cxx\end{DoxyCompactItemize}

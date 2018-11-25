@@ -1,0 +1,416 @@
+\hypertarget{classcommand_1_1_parameter_parser}{
+\section{command::ParameterParser Class Reference}
+\label{classcommand_1_1_parameter_parser}\index{command::ParameterParser@{command::ParameterParser}}
+}
+
+
+Parses user input parameters.  
+
+
+
+
+{\ttfamily \#include $<$ParameterParser.h$>$}
+
+
+
+Collaboration diagram for command::ParameterParser:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classcommand_1_1_parameter_parser__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{classcommand_1_1_parameter_parser_a746a12b36f0881225c568f0b23bf815b}{parse} (int argc, char $\ast$$\ast$argv)
+\begin{DoxyCompactList}\small\item\em Parses an array of program parameters. \item\end{DoxyCompactList}\item 
+string \hyperlink{classcommand_1_1_parameter_parser_ae9cc20f77e2e0cb841d9f332604818ea}{parse} (char $\ast$arg)
+\begin{DoxyCompactList}\small\item\em Parses a single parameter. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classcommand_1_1_parameter_parser_a0157d4dc3d92e25713da3d8a1855ce13}{getTestRun} ()
+\begin{DoxyCompactList}\small\item\em Returns true if the tests will to be executed. \item\end{DoxyCompactList}\item 
+int \hyperlink{classcommand_1_1_parameter_parser_a616ed93ea17dcae575e95684c461361c}{getExtrusionCount} ()
+\begin{DoxyCompactList}\small\item\em Returns the number of extrusion iterations in the CT image extrusion. \item\end{DoxyCompactList}\item 
+int \hyperlink{classcommand_1_1_parameter_parser_a391f0a5a9172660d42ab0aa0335aa7a3}{getInterpolationMethod} ()
+\begin{DoxyCompactList}\small\item\em Returns the interpolation method. \item\end{DoxyCompactList}\item 
+int \hyperlink{classcommand_1_1_parameter_parser_a1537acdf02c84c8d72d1bd7c48a491fc}{getAssignmentMethod} ()
+\begin{DoxyCompactList}\small\item\em Returns the assignment method. \item\end{DoxyCompactList}\item 
+string \hyperlink{classcommand_1_1_parameter_parser_afe39700e6cbaf3c08042cb2ad0a665f9}{getAbaqusInputFile} ()
+\begin{DoxyCompactList}\small\item\em Returns the Abaqus input file. \item\end{DoxyCompactList}\item 
+string \hyperlink{classcommand_1_1_parameter_parser_ae49c945fa67ed139c54679c636dc6e82}{getAnsysInputFolder} ()
+\begin{DoxyCompactList}\small\item\em Returns the Ansys input folder. \item\end{DoxyCompactList}\item 
+string \hyperlink{classcommand_1_1_parameter_parser_a24f467a6aad45d1dbb7b0b80b238c6dd}{getDicomInputFolder} ()
+\begin{DoxyCompactList}\small\item\em Returns the Dicom input folder. \item\end{DoxyCompactList}\item 
+string \hyperlink{classcommand_1_1_parameter_parser_abaf5fed7dedf9f2c4155cee75041321d}{getMetaimageInputFile} ()
+\begin{DoxyCompactList}\small\item\em Returns the Abaqus input file. \item\end{DoxyCompactList}\item 
+string \hyperlink{classcommand_1_1_parameter_parser_a6e4c59f60f04b2a25b940a1ab27c8734}{getAbaqusOutputFile} ()
+\begin{DoxyCompactList}\small\item\em Returns the Abaqus file destination. \item\end{DoxyCompactList}\item 
+string \hyperlink{classcommand_1_1_parameter_parser_adedfc9af8c5993e4b3776231b093faf9}{getAnsysOutputFile} ()
+\begin{DoxyCompactList}\small\item\em Returns the Ansys file destination. \item\end{DoxyCompactList}\item 
+double \hyperlink{classcommand_1_1_parameter_parser_ad69cf3bdc259377f6c65e2de8ae7fb4f}{getLawParameterA} ()
+\begin{DoxyCompactList}\small\item\em Gets the first parameter for the assignment law. \item\end{DoxyCompactList}\item 
+double \hyperlink{classcommand_1_1_parameter_parser_aa14baf15782ee89164d535bffa975bf9}{getLawParameterB} ()
+\begin{DoxyCompactList}\small\item\em Gets the second parameter for the assignment law. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classcommand_1_1_parameter_parser_a2833fc94c1688934898c7b079684d45a}{
+void \hyperlink{classcommand_1_1_parameter_parser_a2833fc94c1688934898c7b079684d45a}{setDefaultValues} ()}
+\label{classcommand_1_1_parameter_parser_a2833fc94c1688934898c7b079684d45a}
+
+\begin{DoxyCompactList}\small\item\em Set the values to a default state. \item\end{DoxyCompactList}\item 
+string \hyperlink{classcommand_1_1_parameter_parser_a7a1cce7b6754b4ce4aba2540f01b40bb}{getHelpString} ()
+\begin{DoxyCompactList}\small\item\em Gets the help output to be displayed the user. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classcommand_1_1_parameter_parser_a234649998e2c18fbb8d47bde6c1f1ba7}{
+int \hyperlink{classcommand_1_1_parameter_parser_a234649998e2c18fbb8d47bde6c1f1ba7}{interpolationMethod}}
+\label{classcommand_1_1_parameter_parser_a234649998e2c18fbb8d47bde6c1f1ba7}
+
+\begin{DoxyCompactList}\small\item\em The method for the interpolation Either assignment::TRILINEAR\_\-INTERPOLATION or assignment::TRICUBIC\_\-INTERPOLATION. \item\end{DoxyCompactList}\item 
+\hypertarget{classcommand_1_1_parameter_parser_a1bcc6f566e71ca9a8cfba54d81dbc625}{
+int \hyperlink{classcommand_1_1_parameter_parser_a1bcc6f566e71ca9a8cfba54d81dbc625}{extrusionCount}}
+\label{classcommand_1_1_parameter_parser_a1bcc6f566e71ca9a8cfba54d81dbc625}
+
+\begin{DoxyCompactList}\small\item\em The number of iterations for the CT image extrusion. \item\end{DoxyCompactList}\item 
+\hypertarget{classcommand_1_1_parameter_parser_a62f598530edbad20d02e0ea5d3918f39}{
+int \hyperlink{classcommand_1_1_parameter_parser_a62f598530edbad20d02e0ea5d3918f39}{assignmentMethod}}
+\label{classcommand_1_1_parameter_parser_a62f598530edbad20d02e0ea5d3918f39}
+
+\begin{DoxyCompactList}\small\item\em The method for the assignment Either assignment::NODE\_\-ASSIGNMENT or assignment::ELEMENT\_\-ASSIGNMENT. \item\end{DoxyCompactList}\item 
+\hypertarget{classcommand_1_1_parameter_parser_ac67cdcc0339a96d20fb6c05fcc167ebf}{
+bool \hyperlink{classcommand_1_1_parameter_parser_ac67cdcc0339a96d20fb6c05fcc167ebf}{testRun}}
+\label{classcommand_1_1_parameter_parser_ac67cdcc0339a96d20fb6c05fcc167ebf}
+
+\begin{DoxyCompactList}\small\item\em True if the tests will to be executed. \item\end{DoxyCompactList}\item 
+\hypertarget{classcommand_1_1_parameter_parser_a38434d241d76f58223707fe17c4f8643}{
+string \hyperlink{classcommand_1_1_parameter_parser_a38434d241d76f58223707fe17c4f8643}{abaqusInputFile}}
+\label{classcommand_1_1_parameter_parser_a38434d241d76f58223707fe17c4f8643}
+
+\begin{DoxyCompactList}\small\item\em The Abaqus input file. \item\end{DoxyCompactList}\item 
+\hypertarget{classcommand_1_1_parameter_parser_a6e04e6d3ad9ee951912c6950eee46f05}{
+string \hyperlink{classcommand_1_1_parameter_parser_a6e04e6d3ad9ee951912c6950eee46f05}{ansysInputFolder}}
+\label{classcommand_1_1_parameter_parser_a6e04e6d3ad9ee951912c6950eee46f05}
+
+\begin{DoxyCompactList}\small\item\em The Ansys input folder. \item\end{DoxyCompactList}\item 
+\hypertarget{classcommand_1_1_parameter_parser_ac0fc0517f313841d224322e7c9f6297f}{
+string \hyperlink{classcommand_1_1_parameter_parser_ac0fc0517f313841d224322e7c9f6297f}{dicomInputFolder}}
+\label{classcommand_1_1_parameter_parser_ac0fc0517f313841d224322e7c9f6297f}
+
+\begin{DoxyCompactList}\small\item\em The Dicom input folder. \item\end{DoxyCompactList}\item 
+\hypertarget{classcommand_1_1_parameter_parser_a75d4cd4a63dbb299642a0d32af3e1e3c}{
+string \hyperlink{classcommand_1_1_parameter_parser_a75d4cd4a63dbb299642a0d32af3e1e3c}{metaimageInputFile}}
+\label{classcommand_1_1_parameter_parser_a75d4cd4a63dbb299642a0d32af3e1e3c}
+
+\begin{DoxyCompactList}\small\item\em The Metaimage input file. \item\end{DoxyCompactList}\item 
+\hypertarget{classcommand_1_1_parameter_parser_ace3041da862283468130afae6f8a6ef9}{
+string \hyperlink{classcommand_1_1_parameter_parser_ace3041da862283468130afae6f8a6ef9}{abaqusOutputFile}}
+\label{classcommand_1_1_parameter_parser_ace3041da862283468130afae6f8a6ef9}
+
+\begin{DoxyCompactList}\small\item\em The Abaqus file for the export. \item\end{DoxyCompactList}\item 
+\hypertarget{classcommand_1_1_parameter_parser_a658f1b9e13a618cde707c39d9c3fa47f}{
+string \hyperlink{classcommand_1_1_parameter_parser_a658f1b9e13a618cde707c39d9c3fa47f}{ansysOutputFile}}
+\label{classcommand_1_1_parameter_parser_a658f1b9e13a618cde707c39d9c3fa47f}
+
+\begin{DoxyCompactList}\small\item\em The Ansys file for the export. \item\end{DoxyCompactList}\item 
+\hypertarget{classcommand_1_1_parameter_parser_a509fd72437ab207b5e49b2181e9fe1cf}{
+double \hyperlink{classcommand_1_1_parameter_parser_a509fd72437ab207b5e49b2181e9fe1cf}{lawParameterA}}
+\label{classcommand_1_1_parameter_parser_a509fd72437ab207b5e49b2181e9fe1cf}
+
+\begin{DoxyCompactList}\small\item\em The first parameter for the assignment law. \item\end{DoxyCompactList}\item 
+\hypertarget{classcommand_1_1_parameter_parser_ab6e1cd89701906fb6b1da41615ea87b2}{
+double \hyperlink{classcommand_1_1_parameter_parser_ab6e1cd89701906fb6b1da41615ea87b2}{lawParameterB}}
+\label{classcommand_1_1_parameter_parser_ab6e1cd89701906fb6b1da41615ea87b2}
+
+\begin{DoxyCompactList}\small\item\em The second parameter for the assignment law. \item\end{DoxyCompactList}\item 
+\hypertarget{classcommand_1_1_parameter_parser_a58c087ec1d535bea3c441f21954e78c2}{
+double \hyperlink{classcommand_1_1_parameter_parser_a58c087ec1d535bea3c441f21954e78c2}{defaultLawParameterA}}
+\label{classcommand_1_1_parameter_parser_a58c087ec1d535bea3c441f21954e78c2}
+
+\begin{DoxyCompactList}\small\item\em Default value for lawParameterA. \item\end{DoxyCompactList}\item 
+\hypertarget{classcommand_1_1_parameter_parser_aca38ca87afb3329e1d610c92bf50b1d6}{
+double \hyperlink{classcommand_1_1_parameter_parser_aca38ca87afb3329e1d610c92bf50b1d6}{defaultLawParameterB}}
+\label{classcommand_1_1_parameter_parser_aca38ca87afb3329e1d610c92bf50b1d6}
+
+\begin{DoxyCompactList}\small\item\em Default value for lawParameterB. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classcommand_1_1_parameter_parser_ac15a30464e62c3505577b585ef975ed9}{
+static const int \hyperlink{classcommand_1_1_parameter_parser_ac15a30464e62c3505577b585ef975ed9}{defaultExtrusionCount} = 3}
+\label{classcommand_1_1_parameter_parser_ac15a30464e62c3505577b585ef975ed9}
+
+\begin{DoxyCompactList}\small\item\em Default value for extrusionCount. \item\end{DoxyCompactList}\item 
+\hypertarget{classcommand_1_1_parameter_parser_a99f702ccb0b934b9fa80f28ff5b78480}{
+static const int \hyperlink{classcommand_1_1_parameter_parser_a99f702ccb0b934b9fa80f28ff5b78480}{defaultInterpolationMethod} = assignment::TRILINEAR\_\-INTERPOLATION}
+\label{classcommand_1_1_parameter_parser_a99f702ccb0b934b9fa80f28ff5b78480}
+
+\begin{DoxyCompactList}\small\item\em Default value for interpolationMethod. \item\end{DoxyCompactList}\item 
+\hypertarget{classcommand_1_1_parameter_parser_a5e26fd646039c484fd61461074654e43}{
+static const int \hyperlink{classcommand_1_1_parameter_parser_a5e26fd646039c484fd61461074654e43}{defaultAssignmentMethod} = assignment::NODE\_\-ASSIGNMENT}
+\label{classcommand_1_1_parameter_parser_a5e26fd646039c484fd61461074654e43}
+
+\begin{DoxyCompactList}\small\item\em Default value for assignmentMethod. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Parses user input parameters. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classcommand_1_1_parameter_parser_afe39700e6cbaf3c08042cb2ad0a665f9}{
+\index{command::ParameterParser@{command::ParameterParser}!getAbaqusInputFile@{getAbaqusInputFile}}
+\index{getAbaqusInputFile@{getAbaqusInputFile}!command::ParameterParser@{command::ParameterParser}}
+\subsubsection[{getAbaqusInputFile}]{\setlength{\rightskip}{0pt plus 5cm}string command::ParameterParser::getAbaqusInputFile (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classcommand_1_1_parameter_parser_afe39700e6cbaf3c08042cb2ad0a665f9}
+
+
+Returns the Abaqus input file. 
+
+\begin{DoxyReturn}{Returns}
+The file location 
+\end{DoxyReturn}
+\hypertarget{classcommand_1_1_parameter_parser_a6e4c59f60f04b2a25b940a1ab27c8734}{
+\index{command::ParameterParser@{command::ParameterParser}!getAbaqusOutputFile@{getAbaqusOutputFile}}
+\index{getAbaqusOutputFile@{getAbaqusOutputFile}!command::ParameterParser@{command::ParameterParser}}
+\subsubsection[{getAbaqusOutputFile}]{\setlength{\rightskip}{0pt plus 5cm}string command::ParameterParser::getAbaqusOutputFile (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classcommand_1_1_parameter_parser_a6e4c59f60f04b2a25b940a1ab27c8734}
+
+
+Returns the Abaqus file destination. 
+
+\begin{DoxyReturn}{Returns}
+The file destination 
+\end{DoxyReturn}
+\hypertarget{classcommand_1_1_parameter_parser_ae49c945fa67ed139c54679c636dc6e82}{
+\index{command::ParameterParser@{command::ParameterParser}!getAnsysInputFolder@{getAnsysInputFolder}}
+\index{getAnsysInputFolder@{getAnsysInputFolder}!command::ParameterParser@{command::ParameterParser}}
+\subsubsection[{getAnsysInputFolder}]{\setlength{\rightskip}{0pt plus 5cm}string command::ParameterParser::getAnsysInputFolder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classcommand_1_1_parameter_parser_ae49c945fa67ed139c54679c636dc6e82}
+
+
+Returns the Ansys input folder. 
+
+\begin{DoxyReturn}{Returns}
+The folder location 
+\end{DoxyReturn}
+\hypertarget{classcommand_1_1_parameter_parser_adedfc9af8c5993e4b3776231b093faf9}{
+\index{command::ParameterParser@{command::ParameterParser}!getAnsysOutputFile@{getAnsysOutputFile}}
+\index{getAnsysOutputFile@{getAnsysOutputFile}!command::ParameterParser@{command::ParameterParser}}
+\subsubsection[{getAnsysOutputFile}]{\setlength{\rightskip}{0pt plus 5cm}string command::ParameterParser::getAnsysOutputFile (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classcommand_1_1_parameter_parser_adedfc9af8c5993e4b3776231b093faf9}
+
+
+Returns the Ansys file destination. 
+
+\begin{DoxyReturn}{Returns}
+The file destination 
+\end{DoxyReturn}
+\hypertarget{classcommand_1_1_parameter_parser_a1537acdf02c84c8d72d1bd7c48a491fc}{
+\index{command::ParameterParser@{command::ParameterParser}!getAssignmentMethod@{getAssignmentMethod}}
+\index{getAssignmentMethod@{getAssignmentMethod}!command::ParameterParser@{command::ParameterParser}}
+\subsubsection[{getAssignmentMethod}]{\setlength{\rightskip}{0pt plus 5cm}int command::ParameterParser::getAssignmentMethod (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classcommand_1_1_parameter_parser_a1537acdf02c84c8d72d1bd7c48a491fc}
+
+
+Returns the assignment method. 
+
+\begin{DoxyReturn}{Returns}
+assignment::NODE\_\-ASSIGNMENT or assignment::ELEMENT\_\-ASSIGNMENT 
+\end{DoxyReturn}
+\hypertarget{classcommand_1_1_parameter_parser_a24f467a6aad45d1dbb7b0b80b238c6dd}{
+\index{command::ParameterParser@{command::ParameterParser}!getDicomInputFolder@{getDicomInputFolder}}
+\index{getDicomInputFolder@{getDicomInputFolder}!command::ParameterParser@{command::ParameterParser}}
+\subsubsection[{getDicomInputFolder}]{\setlength{\rightskip}{0pt plus 5cm}string command::ParameterParser::getDicomInputFolder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classcommand_1_1_parameter_parser_a24f467a6aad45d1dbb7b0b80b238c6dd}
+
+
+Returns the Dicom input folder. 
+
+\begin{DoxyReturn}{Returns}
+The folder location 
+\end{DoxyReturn}
+\hypertarget{classcommand_1_1_parameter_parser_a616ed93ea17dcae575e95684c461361c}{
+\index{command::ParameterParser@{command::ParameterParser}!getExtrusionCount@{getExtrusionCount}}
+\index{getExtrusionCount@{getExtrusionCount}!command::ParameterParser@{command::ParameterParser}}
+\subsubsection[{getExtrusionCount}]{\setlength{\rightskip}{0pt plus 5cm}int command::ParameterParser::getExtrusionCount (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classcommand_1_1_parameter_parser_a616ed93ea17dcae575e95684c461361c}
+
+
+Returns the number of extrusion iterations in the CT image extrusion. 
+
+\begin{DoxyReturn}{Returns}
+The number of extrusion iterations 
+\end{DoxyReturn}
+\hypertarget{classcommand_1_1_parameter_parser_a7a1cce7b6754b4ce4aba2540f01b40bb}{
+\index{command::ParameterParser@{command::ParameterParser}!getHelpString@{getHelpString}}
+\index{getHelpString@{getHelpString}!command::ParameterParser@{command::ParameterParser}}
+\subsubsection[{getHelpString}]{\setlength{\rightskip}{0pt plus 5cm}string command::ParameterParser::getHelpString (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classcommand_1_1_parameter_parser_a7a1cce7b6754b4ce4aba2540f01b40bb}
+
+
+Gets the help output to be displayed the user. 
+
+\begin{DoxyReturn}{Returns}
+The help output 
+\end{DoxyReturn}
+\hypertarget{classcommand_1_1_parameter_parser_a391f0a5a9172660d42ab0aa0335aa7a3}{
+\index{command::ParameterParser@{command::ParameterParser}!getInterpolationMethod@{getInterpolationMethod}}
+\index{getInterpolationMethod@{getInterpolationMethod}!command::ParameterParser@{command::ParameterParser}}
+\subsubsection[{getInterpolationMethod}]{\setlength{\rightskip}{0pt plus 5cm}int command::ParameterParser::getInterpolationMethod (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classcommand_1_1_parameter_parser_a391f0a5a9172660d42ab0aa0335aa7a3}
+
+
+Returns the interpolation method. 
+
+\begin{DoxyReturn}{Returns}
+assignment::TRILINEAR\_\-INTERPOLATION or assignment::TRICUBIC\_\-INTERPOLATION 
+\end{DoxyReturn}
+\hypertarget{classcommand_1_1_parameter_parser_ad69cf3bdc259377f6c65e2de8ae7fb4f}{
+\index{command::ParameterParser@{command::ParameterParser}!getLawParameterA@{getLawParameterA}}
+\index{getLawParameterA@{getLawParameterA}!command::ParameterParser@{command::ParameterParser}}
+\subsubsection[{getLawParameterA}]{\setlength{\rightskip}{0pt plus 5cm}double command::ParameterParser::getLawParameterA (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classcommand_1_1_parameter_parser_ad69cf3bdc259377f6c65e2de8ae7fb4f}
+
+
+Gets the first parameter for the assignment law. 
+
+\begin{DoxyReturn}{Returns}
+The first law assignment parameter 
+\end{DoxyReturn}
+\hypertarget{classcommand_1_1_parameter_parser_aa14baf15782ee89164d535bffa975bf9}{
+\index{command::ParameterParser@{command::ParameterParser}!getLawParameterB@{getLawParameterB}}
+\index{getLawParameterB@{getLawParameterB}!command::ParameterParser@{command::ParameterParser}}
+\subsubsection[{getLawParameterB}]{\setlength{\rightskip}{0pt plus 5cm}double command::ParameterParser::getLawParameterB (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classcommand_1_1_parameter_parser_aa14baf15782ee89164d535bffa975bf9}
+
+
+Gets the second parameter for the assignment law. 
+
+\begin{DoxyReturn}{Returns}
+The second law assignment parameter 
+\end{DoxyReturn}
+\hypertarget{classcommand_1_1_parameter_parser_abaf5fed7dedf9f2c4155cee75041321d}{
+\index{command::ParameterParser@{command::ParameterParser}!getMetaimageInputFile@{getMetaimageInputFile}}
+\index{getMetaimageInputFile@{getMetaimageInputFile}!command::ParameterParser@{command::ParameterParser}}
+\subsubsection[{getMetaimageInputFile}]{\setlength{\rightskip}{0pt plus 5cm}string command::ParameterParser::getMetaimageInputFile (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classcommand_1_1_parameter_parser_abaf5fed7dedf9f2c4155cee75041321d}
+
+
+Returns the Abaqus input file. 
+
+\begin{DoxyReturn}{Returns}
+The file location 
+\end{DoxyReturn}
+\hypertarget{classcommand_1_1_parameter_parser_a0157d4dc3d92e25713da3d8a1855ce13}{
+\index{command::ParameterParser@{command::ParameterParser}!getTestRun@{getTestRun}}
+\index{getTestRun@{getTestRun}!command::ParameterParser@{command::ParameterParser}}
+\subsubsection[{getTestRun}]{\setlength{\rightskip}{0pt plus 5cm}bool command::ParameterParser::getTestRun (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classcommand_1_1_parameter_parser_a0157d4dc3d92e25713da3d8a1855ce13}
+
+
+Returns true if the tests will to be executed. 
+
+\begin{DoxyReturn}{Returns}
+Whether the tests will be executed 
+\end{DoxyReturn}
+\hypertarget{classcommand_1_1_parameter_parser_a746a12b36f0881225c568f0b23bf815b}{
+\index{command::ParameterParser@{command::ParameterParser}!parse@{parse}}
+\index{parse@{parse}!command::ParameterParser@{command::ParameterParser}}
+\subsubsection[{parse}]{\setlength{\rightskip}{0pt plus 5cm}string command::ParameterParser::parse (
+\begin{DoxyParamCaption}
+\item[{int}]{ argc, }
+\item[{char $\ast$$\ast$}]{ argv}
+\end{DoxyParamCaption}
+)}}
+\label{classcommand_1_1_parameter_parser_a746a12b36f0881225c568f0b23bf815b}
+
+
+Parses an array of program parameters. 
+
+\begin{DoxyWarning}{Warning}
+The first value in the char array is ignored as it usually contains the program's name 
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em argc}]The parameter count \item[{\em argv}]The parameter array \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The error message. If the return string is empty the parsing was successful 
+\end{DoxyReturn}
+\hypertarget{classcommand_1_1_parameter_parser_ae9cc20f77e2e0cb841d9f332604818ea}{
+\index{command::ParameterParser@{command::ParameterParser}!parse@{parse}}
+\index{parse@{parse}!command::ParameterParser@{command::ParameterParser}}
+\subsubsection[{parse}]{\setlength{\rightskip}{0pt plus 5cm}string command::ParameterParser::parse (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{ arg}
+\end{DoxyParamCaption}
+)}}
+\label{classcommand_1_1_parameter_parser_ae9cc20f77e2e0cb841d9f332604818ea}
+
+
+Parses a single parameter. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em arg}]A parameter \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The error message. If the return string is empty the parsing was successful 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+command/ParameterParser.h\item 
+command/ParameterParser.cxx\end{DoxyCompactItemize}

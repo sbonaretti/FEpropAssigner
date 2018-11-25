@@ -1,0 +1,143 @@
+\hypertarget{classmesh_1_1_mesh}{
+\section{mesh::Mesh Class Reference}
+\label{classmesh_1_1_mesh}\index{mesh::Mesh@{mesh::Mesh}}
+}
+
+
+This class holds mesh data.  
+
+
+
+
+{\ttfamily \#include $<$Mesh.h$>$}
+
+
+
+Collaboration diagram for mesh::Mesh:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classmesh_1_1_mesh__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structmesh_1_1_mesh_1_1_element}{Element}
+\begin{DoxyCompactList}\small\item\em An element with its node Ids. \item\end{DoxyCompactList}\item 
+struct \hyperlink{structmesh_1_1_mesh_1_1_point}{Point}
+\begin{DoxyCompactList}\small\item\em A point in space. \item\end{DoxyCompactList}\item 
+struct \hyperlink{structmesh_1_1_mesh_1_1_triangle}{Triangle}
+\begin{DoxyCompactList}\small\item\em A surface triangle of three node Ids. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ int $>$ $\ast$ \hyperlink{classmesh_1_1_mesh_a08b9ef9ed39c4252d8c5819d527b4bb5}{getNodeIds} ()
+\item 
+vector$<$ \hyperlink{structmesh_1_1_mesh_1_1_triangle}{Mesh::Triangle} $>$ $\ast$ \hyperlink{classmesh_1_1_mesh_adea40edfe5208ed0635d01319305a52b}{getTriangleVector} ()
+\item 
+vector$<$ \hyperlink{structmesh_1_1_mesh_1_1_point}{Mesh::Point} $>$ $\ast$ \hyperlink{classmesh_1_1_mesh_aee129b99bbc5ed1fc69c4b35be8e9536}{getPointVector} ()
+\item 
+map$<$ int, \hyperlink{structmesh_1_1_mesh_1_1_element}{Element} $>$ $\ast$ \hyperlink{classmesh_1_1_mesh_a5b766d9061fcc7ee30d6b0059cfa815f}{getElements} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmesh_1_1_mesh_ac32a7d59a92de7a1e4eaf5b016d63dff}{
+vector$<$ int $>$ \hyperlink{classmesh_1_1_mesh_ac32a7d59a92de7a1e4eaf5b016d63dff}{surfaceNodeIdVector}}
+\label{classmesh_1_1_mesh_ac32a7d59a92de7a1e4eaf5b016d63dff}
+
+\begin{DoxyCompactList}\small\item\em The surface node Ids. \item\end{DoxyCompactList}\item 
+\hypertarget{classmesh_1_1_mesh_acdbed9293a87ffde0887764db16809ef}{
+vector$<$ \hyperlink{structmesh_1_1_mesh_1_1_triangle}{Mesh::Triangle} $>$ \hyperlink{classmesh_1_1_mesh_acdbed9293a87ffde0887764db16809ef}{triangleVector}}
+\label{classmesh_1_1_mesh_acdbed9293a87ffde0887764db16809ef}
+
+\begin{DoxyCompactList}\small\item\em The surface triangles. \item\end{DoxyCompactList}\item 
+\hypertarget{classmesh_1_1_mesh_a1caa15084eed4de46071cdb1da774069}{
+vector$<$ int $>$ \hyperlink{classmesh_1_1_mesh_a1caa15084eed4de46071cdb1da774069}{nodeIds}}
+\label{classmesh_1_1_mesh_a1caa15084eed4de46071cdb1da774069}
+
+\begin{DoxyCompactList}\small\item\em The node Ids. \item\end{DoxyCompactList}\item 
+\hypertarget{classmesh_1_1_mesh_ac004fba269ab0a78d688360865d5ae1a}{
+vector$<$ \hyperlink{structmesh_1_1_mesh_1_1_point}{Mesh::Point} $>$ \hyperlink{classmesh_1_1_mesh_ac004fba269ab0a78d688360865d5ae1a}{pointVector}}
+\label{classmesh_1_1_mesh_ac004fba269ab0a78d688360865d5ae1a}
+
+\begin{DoxyCompactList}\small\item\em The node coordinates. \item\end{DoxyCompactList}\item 
+\hypertarget{classmesh_1_1_mesh_a96bc5c338398ead84b1ab2aa9b664d06}{
+map$<$ int, \hyperlink{structmesh_1_1_mesh_1_1_element}{Element} $>$ \hyperlink{classmesh_1_1_mesh_a96bc5c338398ead84b1ab2aa9b664d06}{elements}}
+\label{classmesh_1_1_mesh_a96bc5c338398ead84b1ab2aa9b664d06}
+
+\begin{DoxyCompactList}\small\item\em A map that maps the element Ids to the \hyperlink{structmesh_1_1_mesh_1_1_element}{mesh::Mesh::Element} data. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmesh_1_1_mesh_a5da36615b6c00ca1941e7504222978be}{
+class {\bfseries AnsysMeshLoader}}
+\label{classmesh_1_1_mesh_a5da36615b6c00ca1941e7504222978be}
+
+\item 
+\hypertarget{classmesh_1_1_mesh_a7b065f6fb884c97bbb9100e204979c70}{
+class {\bfseries AbaqusMeshLoader}}
+\label{classmesh_1_1_mesh_a7b065f6fb884c97bbb9100e204979c70}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class holds mesh data. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmesh_1_1_mesh_a5b766d9061fcc7ee30d6b0059cfa815f}{
+\index{mesh::Mesh@{mesh::Mesh}!getElements@{getElements}}
+\index{getElements@{getElements}!mesh::Mesh@{mesh::Mesh}}
+\subsubsection[{getElements}]{\setlength{\rightskip}{0pt plus 5cm}map$<$ int, {\bf Mesh::Element} $>$ $\ast$ mesh::Mesh::getElements (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classmesh_1_1_mesh_a5b766d9061fcc7ee30d6b0059cfa815f}
+\begin{DoxyReturn}{Returns}
+The map that maps the element Ids to the \hyperlink{structmesh_1_1_mesh_1_1_element}{mesh::Mesh::Element} data 
+\end{DoxyReturn}
+\hypertarget{classmesh_1_1_mesh_a08b9ef9ed39c4252d8c5819d527b4bb5}{
+\index{mesh::Mesh@{mesh::Mesh}!getNodeIds@{getNodeIds}}
+\index{getNodeIds@{getNodeIds}!mesh::Mesh@{mesh::Mesh}}
+\subsubsection[{getNodeIds}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ int $>$ $\ast$ mesh::Mesh::getNodeIds (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classmesh_1_1_mesh_a08b9ef9ed39c4252d8c5819d527b4bb5}
+\begin{DoxyReturn}{Returns}
+The node Ids 
+\end{DoxyReturn}
+\hypertarget{classmesh_1_1_mesh_aee129b99bbc5ed1fc69c4b35be8e9536}{
+\index{mesh::Mesh@{mesh::Mesh}!getPointVector@{getPointVector}}
+\index{getPointVector@{getPointVector}!mesh::Mesh@{mesh::Mesh}}
+\subsubsection[{getPointVector}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf Mesh::Point} $>$ $\ast$ mesh::Mesh::getPointVector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classmesh_1_1_mesh_aee129b99bbc5ed1fc69c4b35be8e9536}
+\begin{DoxyReturn}{Returns}
+The node coordinates 
+\end{DoxyReturn}
+\hypertarget{classmesh_1_1_mesh_adea40edfe5208ed0635d01319305a52b}{
+\index{mesh::Mesh@{mesh::Mesh}!getTriangleVector@{getTriangleVector}}
+\index{getTriangleVector@{getTriangleVector}!mesh::Mesh@{mesh::Mesh}}
+\subsubsection[{getTriangleVector}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf Mesh::Triangle} $>$ $\ast$ mesh::Mesh::getTriangleVector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classmesh_1_1_mesh_adea40edfe5208ed0635d01319305a52b}
+\begin{DoxyReturn}{Returns}
+The surface triangles 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+mesh/Mesh.h\item 
+mesh/Mesh.cxx\end{DoxyCompactItemize}

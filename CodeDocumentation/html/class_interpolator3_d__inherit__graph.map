@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classtest_1_1_interpolator3_d_mock.html" title="{test::Interpolator3DMock\n||+ Interpolator3DMock()\l+ setUpCubeMock()\l+ getValue()\l}" alt="" coords="5,452,200,572"/>
+<area shape="rect" id="node5" href="$class_tricubic_interpolator.html" title="{TricubicInterpolator\n||+ TricubicInterpolator()\l+ getValue()\l+ ~TricubicInterpolator()\l&#45; interpolateCubic()\l&#45; interpolateBicubic()\l}" alt="" coords="224,435,411,589"/>
+<area shape="rect" id="node7" href="$class_trilinear_interpolator.html" title="{TrilinearInterpolator\n||+ TrilinearInterpolator()\l+ getValue()\l+ ~TrilinearInterpolator()\l&#45; interpolate()\l}" alt="" coords="435,443,621,581"/>
+</map>

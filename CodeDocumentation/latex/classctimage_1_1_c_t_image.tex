@@ -1,0 +1,305 @@
+\hypertarget{classctimage_1_1_c_t_image}{
+\section{ctimage::CTImage Class Reference}
+\label{classctimage_1_1_c_t_image}\index{ctimage::CTImage@{ctimage::CTImage}}
+}
+
+
+Inheritance diagram for ctimage::CTImage:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{classctimage_1_1_c_t_image__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ctimage::CTImage:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=375pt]{classctimage_1_1_c_t_image__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classctimage_1_1_c_t_image_ab3bf32a276d168a705973d8d6c698cec}{
+typedef signed short \hyperlink{classctimage_1_1_c_t_image_ab3bf32a276d168a705973d8d6c698cec}{CTPixelType}}
+\label{classctimage_1_1_c_t_image_ab3bf32a276d168a705973d8d6c698cec}
+
+\begin{DoxyCompactList}\small\item\em The type of a CT pixel value. \item\end{DoxyCompactList}\item 
+\hypertarget{classctimage_1_1_c_t_image_a6e3fc439772d8f22861508d9a7e3e694}{
+typedef itk::Image$<$ \hyperlink{classctimage_1_1_c_t_image_ab3bf32a276d168a705973d8d6c698cec}{CTPixelType}, \hyperlink{classctimage_1_1_c_t_image_ad28aaad081539a4a2e7f1cc38c06aa3a}{Dimension} $>$ \hyperlink{classctimage_1_1_c_t_image_a6e3fc439772d8f22861508d9a7e3e694}{ItkImageType}}
+\label{classctimage_1_1_c_t_image_a6e3fc439772d8f22861508d9a7e3e694}
+
+\begin{DoxyCompactList}\small\item\em The type of an itk::Image. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classctimage_1_1_c_t_image_ab3bf32a276d168a705973d8d6c698cec}{CTPixelType} $\ast$ \hyperlink{classctimage_1_1_c_t_image_a6878ee1b7181be6227408fe453c8ac8b}{getPixelData} ()
+\item 
+int \hyperlink{classctimage_1_1_c_t_image_a877fb3bce920ba1bb352491c50b4d168}{getNx} ()
+\item 
+int \hyperlink{classctimage_1_1_c_t_image_a031a3229e2354a57490312c154c3b0db}{getNy} ()
+\item 
+int \hyperlink{classctimage_1_1_c_t_image_a005e1a22619e37ee6ed2515911e1ab1d}{getNz} ()
+\item 
+int \hyperlink{classctimage_1_1_c_t_image_a62f2e4428c651f31febc96b10f189632}{getNsum} ()
+\item 
+double \hyperlink{classctimage_1_1_c_t_image_a544abec0ed785ab4b42cccf11c59dc98}{getSx} ()
+\item 
+double \hyperlink{classctimage_1_1_c_t_image_aefac72b6ce49db1ce878103adbe9eb6a}{getSy} ()
+\item 
+double \hyperlink{classctimage_1_1_c_t_image_a26e2a9db85e602f43f2a86ae34504436}{getSz} ()
+\item 
+double \hyperlink{classctimage_1_1_c_t_image_ab1cae0aaaf707edb3b4dd1bb86093076}{getX0} ()
+\item 
+double \hyperlink{classctimage_1_1_c_t_image_a66a56ee2161af9eba00cff98cb2d07dd}{getY0} ()
+\item 
+double \hyperlink{classctimage_1_1_c_t_image_a6317b268b24347587a430adb34b767cb}{getZ0} ()
+\item 
+ItkImageType::Pointer \hyperlink{classctimage_1_1_c_t_image_a56db4348cfa2c01d80b9cfd4aea7ef73}{getItkImage} ()
+\item 
+QSharedPointer$<$ \hyperlink{classctimage_1_1_c_t_image}{CTImage} $>$ \hyperlink{classctimage_1_1_c_t_image_aa80c85e696bdad6bdeebad7c4ca01d76}{createDeepCopy} ()
+\begin{DoxyCompactList}\small\item\em Creates a full copy of the CT image. \item\end{DoxyCompactList}\item 
+void \hyperlink{classctimage_1_1_c_t_image_a3f3dfc3759b0fbdd2bc2eedffbe5546a}{write} (string)
+\begin{DoxyCompactList}\small\item\em Writes the image in DICOM format to the disk. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classctimage_1_1_c_t_image_ad28aaad081539a4a2e7f1cc38c06aa3a}{
+static const int \hyperlink{classctimage_1_1_c_t_image_ad28aaad081539a4a2e7f1cc38c06aa3a}{Dimension} = 3}
+\label{classctimage_1_1_c_t_image_ad28aaad081539a4a2e7f1cc38c06aa3a}
+
+\begin{DoxyCompactList}\small\item\em The dimension of the CT image. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classctimage_1_1_c_t_image_af6d5d0c3991568e121f0543ebaad348c}{
+\hyperlink{classctimage_1_1_c_t_image_ab3bf32a276d168a705973d8d6c698cec}{CTPixelType} $\ast$ \hyperlink{classctimage_1_1_c_t_image_af6d5d0c3991568e121f0543ebaad348c}{pixelData}}
+\label{classctimage_1_1_c_t_image_af6d5d0c3991568e121f0543ebaad348c}
+
+\begin{DoxyCompactList}\small\item\em Pixel data array. \item\end{DoxyCompactList}\item 
+\hypertarget{classctimage_1_1_c_t_image_aab436b15c45aff941a30ebbf3d9ccd7f}{
+int \hyperlink{classctimage_1_1_c_t_image_aab436b15c45aff941a30ebbf3d9ccd7f}{size} \mbox{[}\hyperlink{classctimage_1_1_c_t_image_ad28aaad081539a4a2e7f1cc38c06aa3a}{Dimension}\mbox{]}}
+\label{classctimage_1_1_c_t_image_aab436b15c45aff941a30ebbf3d9ccd7f}
+
+\begin{DoxyCompactList}\small\item\em The dimension in all (xyz) directions. \item\end{DoxyCompactList}\item 
+\hypertarget{classctimage_1_1_c_t_image_ab9a73f002d0cb09bf5a5212f9d64d98f}{
+double \hyperlink{classctimage_1_1_c_t_image_ab9a73f002d0cb09bf5a5212f9d64d98f}{spacing} \mbox{[}\hyperlink{classctimage_1_1_c_t_image_ad28aaad081539a4a2e7f1cc38c06aa3a}{Dimension}\mbox{]}}
+\label{classctimage_1_1_c_t_image_ab9a73f002d0cb09bf5a5212f9d64d98f}
+
+\begin{DoxyCompactList}\small\item\em The spacing between two pixels in all directions. \item\end{DoxyCompactList}\item 
+\hypertarget{classctimage_1_1_c_t_image_ac021e29ecd42262c6a9db72b8b97ce13}{
+double \hyperlink{classctimage_1_1_c_t_image_ac021e29ecd42262c6a9db72b8b97ce13}{origin} \mbox{[}\hyperlink{classctimage_1_1_c_t_image_ad28aaad081539a4a2e7f1cc38c06aa3a}{Dimension}\mbox{]}}
+\label{classctimage_1_1_c_t_image_ac021e29ecd42262c6a9db72b8b97ce13}
+
+\begin{DoxyCompactList}\small\item\em The position of the first pixel of each direction. \item\end{DoxyCompactList}\item 
+\hypertarget{classctimage_1_1_c_t_image_a178d337fefde126244059e5b7f548f0f}{
+ItkImageType::Pointer \hyperlink{classctimage_1_1_c_t_image_a178d337fefde126244059e5b7f548f0f}{itkImage}}
+\label{classctimage_1_1_c_t_image_a178d337fefde126244059e5b7f548f0f}
+
+\begin{DoxyCompactList}\small\item\em The itk::itkImage. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classctimage_1_1_c_t_image_a5cc1455156c67f189525c313a80fb9fc}{
+class {\bfseries DicomCTImageReader}}
+\label{classctimage_1_1_c_t_image_a5cc1455156c67f189525c313a80fb9fc}
+
+\item 
+\hypertarget{classctimage_1_1_c_t_image_a0966d000a96e20736d2debc5591acef1}{
+class {\bfseries MetaimageCTImageReader}}
+\label{classctimage_1_1_c_t_image_a0966d000a96e20736d2debc5591acef1}
+
+\item 
+\hypertarget{classctimage_1_1_c_t_image_ac136807d795545b8468400f61e1b95d2}{
+class {\bfseries CTImageReader}}
+\label{classctimage_1_1_c_t_image_ac136807d795545b8468400f61e1b95d2}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classctimage_1_1_c_t_image_aa80c85e696bdad6bdeebad7c4ca01d76}{
+\index{ctimage::CTImage@{ctimage::CTImage}!createDeepCopy@{createDeepCopy}}
+\index{createDeepCopy@{createDeepCopy}!ctimage::CTImage@{ctimage::CTImage}}
+\subsubsection[{createDeepCopy}]{\setlength{\rightskip}{0pt plus 5cm}QSharedPointer$<$ {\bf CTImage} $>$ ctimage::CTImage::createDeepCopy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classctimage_1_1_c_t_image_aa80c85e696bdad6bdeebad7c4ca01d76}
+
+
+Creates a full copy of the CT image. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to the duplicated \hyperlink{classctimage_1_1_c_t_image}{ctimage::CTImage} 
+\end{DoxyReturn}
+\hypertarget{classctimage_1_1_c_t_image_a56db4348cfa2c01d80b9cfd4aea7ef73}{
+\index{ctimage::CTImage@{ctimage::CTImage}!getItkImage@{getItkImage}}
+\index{getItkImage@{getItkImage}!ctimage::CTImage@{ctimage::CTImage}}
+\subsubsection[{getItkImage}]{\setlength{\rightskip}{0pt plus 5cm}CTImage::ItkImageType::Pointer ctimage::CTImage::getItkImage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classctimage_1_1_c_t_image_a56db4348cfa2c01d80b9cfd4aea7ef73}
+\begin{DoxyReturn}{Returns}
+The itk::itkImage 
+\end{DoxyReturn}
+\hypertarget{classctimage_1_1_c_t_image_a62f2e4428c651f31febc96b10f189632}{
+\index{ctimage::CTImage@{ctimage::CTImage}!getNsum@{getNsum}}
+\index{getNsum@{getNsum}!ctimage::CTImage@{ctimage::CTImage}}
+\subsubsection[{getNsum}]{\setlength{\rightskip}{0pt plus 5cm}int ctimage::CTImage::getNsum (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classctimage_1_1_c_t_image_a62f2e4428c651f31febc96b10f189632}
+\begin{DoxyReturn}{Returns}
+Number of pixels in total 
+\end{DoxyReturn}
+\hypertarget{classctimage_1_1_c_t_image_a877fb3bce920ba1bb352491c50b4d168}{
+\index{ctimage::CTImage@{ctimage::CTImage}!getNx@{getNx}}
+\index{getNx@{getNx}!ctimage::CTImage@{ctimage::CTImage}}
+\subsubsection[{getNx}]{\setlength{\rightskip}{0pt plus 5cm}int ctimage::CTImage::getNx (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classctimage_1_1_c_t_image_a877fb3bce920ba1bb352491c50b4d168}
+\begin{DoxyReturn}{Returns}
+Number of pixels in x direction 
+\end{DoxyReturn}
+\hypertarget{classctimage_1_1_c_t_image_a031a3229e2354a57490312c154c3b0db}{
+\index{ctimage::CTImage@{ctimage::CTImage}!getNy@{getNy}}
+\index{getNy@{getNy}!ctimage::CTImage@{ctimage::CTImage}}
+\subsubsection[{getNy}]{\setlength{\rightskip}{0pt plus 5cm}int ctimage::CTImage::getNy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classctimage_1_1_c_t_image_a031a3229e2354a57490312c154c3b0db}
+\begin{DoxyReturn}{Returns}
+Number of pixels in y direction 
+\end{DoxyReturn}
+\hypertarget{classctimage_1_1_c_t_image_a005e1a22619e37ee6ed2515911e1ab1d}{
+\index{ctimage::CTImage@{ctimage::CTImage}!getNz@{getNz}}
+\index{getNz@{getNz}!ctimage::CTImage@{ctimage::CTImage}}
+\subsubsection[{getNz}]{\setlength{\rightskip}{0pt plus 5cm}int ctimage::CTImage::getNz (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classctimage_1_1_c_t_image_a005e1a22619e37ee6ed2515911e1ab1d}
+\begin{DoxyReturn}{Returns}
+Number of pixels in z direction 
+\end{DoxyReturn}
+\hypertarget{classctimage_1_1_c_t_image_a6878ee1b7181be6227408fe453c8ac8b}{
+\index{ctimage::CTImage@{ctimage::CTImage}!getPixelData@{getPixelData}}
+\index{getPixelData@{getPixelData}!ctimage::CTImage@{ctimage::CTImage}}
+\subsubsection[{getPixelData}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CTImage::CTPixelType} $\ast$ ctimage::CTImage::getPixelData (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classctimage_1_1_c_t_image_a6878ee1b7181be6227408fe453c8ac8b}
+\begin{DoxyReturn}{Returns}
+The CT image's pixels 
+\end{DoxyReturn}
+\hypertarget{classctimage_1_1_c_t_image_a544abec0ed785ab4b42cccf11c59dc98}{
+\index{ctimage::CTImage@{ctimage::CTImage}!getSx@{getSx}}
+\index{getSx@{getSx}!ctimage::CTImage@{ctimage::CTImage}}
+\subsubsection[{getSx}]{\setlength{\rightskip}{0pt plus 5cm}double ctimage::CTImage::getSx (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classctimage_1_1_c_t_image_a544abec0ed785ab4b42cccf11c59dc98}
+\begin{DoxyReturn}{Returns}
+Spacing between pixels in x direction 
+\end{DoxyReturn}
+\hypertarget{classctimage_1_1_c_t_image_aefac72b6ce49db1ce878103adbe9eb6a}{
+\index{ctimage::CTImage@{ctimage::CTImage}!getSy@{getSy}}
+\index{getSy@{getSy}!ctimage::CTImage@{ctimage::CTImage}}
+\subsubsection[{getSy}]{\setlength{\rightskip}{0pt plus 5cm}double ctimage::CTImage::getSy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classctimage_1_1_c_t_image_aefac72b6ce49db1ce878103adbe9eb6a}
+\begin{DoxyReturn}{Returns}
+Spacing between pixels in y direction 
+\end{DoxyReturn}
+\hypertarget{classctimage_1_1_c_t_image_a26e2a9db85e602f43f2a86ae34504436}{
+\index{ctimage::CTImage@{ctimage::CTImage}!getSz@{getSz}}
+\index{getSz@{getSz}!ctimage::CTImage@{ctimage::CTImage}}
+\subsubsection[{getSz}]{\setlength{\rightskip}{0pt plus 5cm}double ctimage::CTImage::getSz (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classctimage_1_1_c_t_image_a26e2a9db85e602f43f2a86ae34504436}
+\begin{DoxyReturn}{Returns}
+Spacing between pixels in z direction 
+\end{DoxyReturn}
+\hypertarget{classctimage_1_1_c_t_image_ab1cae0aaaf707edb3b4dd1bb86093076}{
+\index{ctimage::CTImage@{ctimage::CTImage}!getX0@{getX0}}
+\index{getX0@{getX0}!ctimage::CTImage@{ctimage::CTImage}}
+\subsubsection[{getX0}]{\setlength{\rightskip}{0pt plus 5cm}double ctimage::CTImage::getX0 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classctimage_1_1_c_t_image_ab1cae0aaaf707edb3b4dd1bb86093076}
+\begin{DoxyReturn}{Returns}
+The x-\/coordinate of the first pixel 
+\end{DoxyReturn}
+\hypertarget{classctimage_1_1_c_t_image_a66a56ee2161af9eba00cff98cb2d07dd}{
+\index{ctimage::CTImage@{ctimage::CTImage}!getY0@{getY0}}
+\index{getY0@{getY0}!ctimage::CTImage@{ctimage::CTImage}}
+\subsubsection[{getY0}]{\setlength{\rightskip}{0pt plus 5cm}double ctimage::CTImage::getY0 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classctimage_1_1_c_t_image_a66a56ee2161af9eba00cff98cb2d07dd}
+\begin{DoxyReturn}{Returns}
+The y-\/coordinate of the first pixel 
+\end{DoxyReturn}
+\hypertarget{classctimage_1_1_c_t_image_a6317b268b24347587a430adb34b767cb}{
+\index{ctimage::CTImage@{ctimage::CTImage}!getZ0@{getZ0}}
+\index{getZ0@{getZ0}!ctimage::CTImage@{ctimage::CTImage}}
+\subsubsection[{getZ0}]{\setlength{\rightskip}{0pt plus 5cm}double ctimage::CTImage::getZ0 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classctimage_1_1_c_t_image_a6317b268b24347587a430adb34b767cb}
+\begin{DoxyReturn}{Returns}
+The z-\/coordinate of the first pixel 
+\end{DoxyReturn}
+\hypertarget{classctimage_1_1_c_t_image_a3f3dfc3759b0fbdd2bc2eedffbe5546a}{
+\index{ctimage::CTImage@{ctimage::CTImage}!write@{write}}
+\index{write@{write}!ctimage::CTImage@{ctimage::CTImage}}
+\subsubsection[{write}]{\setlength{\rightskip}{0pt plus 5cm}void ctimage::CTImage::write (
+\begin{DoxyParamCaption}
+\item[{string}]{ directory}
+\end{DoxyParamCaption}
+)}}
+\label{classctimage_1_1_c_t_image_a3f3dfc3759b0fbdd2bc2eedffbe5546a}
+
+
+Writes the image in DICOM format to the disk. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em The}]destination folder \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+ctimage/CTImage.h\item 
+ctimage/CTImage.cxx\end{DoxyCompactItemize}

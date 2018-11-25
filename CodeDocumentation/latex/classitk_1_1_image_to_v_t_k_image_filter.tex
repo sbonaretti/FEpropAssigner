@@ -1,0 +1,217 @@
+\hypertarget{classitk_1_1_image_to_v_t_k_image_filter}{
+\section{itk::ImageToVTKImageFilter$<$ TInputImage $>$ Class Template Reference}
+\label{classitk_1_1_image_to_v_t_k_image_filter}\index{itk::ImageToVTKImageFilter@{itk::ImageToVTKImageFilter}}
+}
+
+
+Converts an ITK image into a VTK image and plugs a itk data pipeline to a VTK datapipeline.  
+
+
+
+
+{\ttfamily \#include $<$itkImageToVTKImageFilter.h$>$}
+
+
+
+Inheritance diagram for itk::ImageToVTKImageFilter$<$ TInputImage $>$:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{classitk_1_1_image_to_v_t_k_image_filter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for itk::ImageToVTKImageFilter$<$ TInputImage $>$:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=366pt]{classitk_1_1_image_to_v_t_k_image_filter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classitk_1_1_image_to_v_t_k_image_filter}{ImageToVTKImageFilter} \hyperlink{classitk_1_1_image_to_v_t_k_image_filter_aa50164b556fb84d67e8631f5649d13e9}{Self}
+\begin{DoxyCompactList}\small\item\em Standard class typedefs. \item\end{DoxyCompactList}\item 
+\hypertarget{classitk_1_1_image_to_v_t_k_image_filter_a6fd526e20e86c11e356390cbf37191a8}{
+typedef \hyperlink{class_process_object}{ProcessObject} {\bfseries Superclass}}
+\label{classitk_1_1_image_to_v_t_k_image_filter_a6fd526e20e86c11e356390cbf37191a8}
+
+\item 
+\hypertarget{classitk_1_1_image_to_v_t_k_image_filter_a3400da105749199d5143f0e63bb0c768}{
+typedef SmartPointer$<$ \hyperlink{classitk_1_1_image_to_v_t_k_image_filter}{Self} $>$ {\bfseries Pointer}}
+\label{classitk_1_1_image_to_v_t_k_image_filter_a3400da105749199d5143f0e63bb0c768}
+
+\item 
+\hypertarget{classitk_1_1_image_to_v_t_k_image_filter_a058254c76c526a16dca79770886f0357}{
+typedef SmartPointer$<$ const \hyperlink{classitk_1_1_image_to_v_t_k_image_filter}{Self} $>$ {\bfseries ConstPointer}}
+\label{classitk_1_1_image_to_v_t_k_image_filter_a058254c76c526a16dca79770886f0357}
+
+\item 
+typedef TInputImage \hyperlink{classitk_1_1_image_to_v_t_k_image_filter_a4676ef1161730b61cddaf6ac892662f3}{InputImageType}
+\begin{DoxyCompactList}\small\item\em Some typedefs. \item\end{DoxyCompactList}\item 
+\hypertarget{classitk_1_1_image_to_v_t_k_image_filter_a3138f40f2bc46018bc6647e9f041fafe}{
+typedef InputImageType::ConstPointer {\bfseries InputImagePointer}}
+\label{classitk_1_1_image_to_v_t_k_image_filter_a3138f40f2bc46018bc6647e9f041fafe}
+
+\item 
+\hypertarget{classitk_1_1_image_to_v_t_k_image_filter_a03c5b387b58f71dbbbc5dfcbeaf0d05b}{
+typedef VTKImageExport$<$ \hyperlink{classitk_1_1_image_to_v_t_k_image_filter_a4676ef1161730b61cddaf6ac892662f3}{InputImageType} $>$ {\bfseries ExporterFilterType}}
+\label{classitk_1_1_image_to_v_t_k_image_filter_a03c5b387b58f71dbbbc5dfcbeaf0d05b}
+
+\item 
+\hypertarget{classitk_1_1_image_to_v_t_k_image_filter_a52a58193bdb8d61c70f0708770c1cbc6}{
+typedef ExporterFilterType::Pointer {\bfseries ExporterFilterPointer}}
+\label{classitk_1_1_image_to_v_t_k_image_filter_a52a58193bdb8d61c70f0708770c1cbc6}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classitk_1_1_image_to_v_t_k_image_filter_aa710a87cb782de6debe331a86646f7b0}{itkNewMacro} (\hyperlink{classitk_1_1_image_to_v_t_k_image_filter}{Self})
+\begin{DoxyCompactList}\small\item\em Method for creation through the object factory. \item\end{DoxyCompactList}\item 
+\hyperlink{classitk_1_1_image_to_v_t_k_image_filter_a2660682c96fa14496eaff4226d9d6f38}{itkTypeMacro} (\hyperlink{classitk_1_1_image_to_v_t_k_image_filter}{ImageToVTKImageFilter}, \hyperlink{class_process_object}{ProcessObject})
+\begin{DoxyCompactList}\small\item\em Run-\/time type information (and related methods). \item\end{DoxyCompactList}\item 
+vtkImageData $\ast$ \hyperlink{classitk_1_1_image_to_v_t_k_image_filter_ac97a69a27292b89146503bac2182cd76}{GetOutput} () const 
+\begin{DoxyCompactList}\small\item\em Get the output in the form of a vtkImage. \item\end{DoxyCompactList}\item 
+\hypertarget{classitk_1_1_image_to_v_t_k_image_filter_a6cab58f7167a357889763a2412d6a9e5}{
+void \hyperlink{classitk_1_1_image_to_v_t_k_image_filter_a6cab58f7167a357889763a2412d6a9e5}{SetInput} (const \hyperlink{classitk_1_1_image_to_v_t_k_image_filter_a4676ef1161730b61cddaf6ac892662f3}{InputImageType} $\ast$)}
+\label{classitk_1_1_image_to_v_t_k_image_filter_a6cab58f7167a357889763a2412d6a9e5}
+
+\begin{DoxyCompactList}\small\item\em Set the input in the form of an itk::Image. \item\end{DoxyCompactList}\item 
+vtkImageImport $\ast$ \hyperlink{classitk_1_1_image_to_v_t_k_image_filter_ac7662c1a28f84be41a998348122aa1e6}{GetImporter} () const 
+\begin{DoxyCompactList}\small\item\em Return the internal VTK image importer filter. \item\end{DoxyCompactList}\item 
+ExporterFilterType $\ast$ \hyperlink{classitk_1_1_image_to_v_t_k_image_filter_a28148e706b46194ef4a812873e67f8b7}{GetExporter} () const 
+\begin{DoxyCompactList}\small\item\em Return the internal ITK image exporter filter. \item\end{DoxyCompactList}\item 
+\hypertarget{classitk_1_1_image_to_v_t_k_image_filter_ad852dddc5730024d756135faa6653158}{
+void \hyperlink{classitk_1_1_image_to_v_t_k_image_filter_ad852dddc5730024d756135faa6653158}{Update} ()}
+\label{classitk_1_1_image_to_v_t_k_image_filter_ad852dddc5730024d756135faa6653158}
+
+\begin{DoxyCompactList}\small\item\em This call delegate the update to the importer. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classitk_1_1_image_to_v_t_k_image_filter_a9d02505a749f0e3a84ef3545d8e26d1b}{
+{\bfseries ImageToVTKImageFilter} (const \hyperlink{classitk_1_1_image_to_v_t_k_image_filter}{Self} \&)}
+\label{classitk_1_1_image_to_v_t_k_image_filter_a9d02505a749f0e3a84ef3545d8e26d1b}
+
+\item 
+\hypertarget{classitk_1_1_image_to_v_t_k_image_filter_a77dca048172100d69033d3c486009245}{
+void {\bfseries operator=} (const \hyperlink{classitk_1_1_image_to_v_t_k_image_filter}{Self} \&)}
+\label{classitk_1_1_image_to_v_t_k_image_filter_a77dca048172100d69033d3c486009245}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classitk_1_1_image_to_v_t_k_image_filter_ad00d5fde8d41cff1c67157a4db345d9d}{
+ExporterFilterPointer {\bfseries m\_\-Exporter}}
+\label{classitk_1_1_image_to_v_t_k_image_filter_ad00d5fde8d41cff1c67157a4db345d9d}
+
+\item 
+\hypertarget{classitk_1_1_image_to_v_t_k_image_filter_a767ad68d2686e62cee454d3776d6efe8}{
+vtkImageImport $\ast$ {\bfseries m\_\-Importer}}
+\label{classitk_1_1_image_to_v_t_k_image_filter_a767ad68d2686e62cee454d3776d6efe8}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class TInputImage$>$ class itk::ImageToVTKImageFilter$<$ TInputImage $>$}
+
+Converts an ITK image into a VTK image and plugs a itk data pipeline to a VTK datapipeline. This class puts together an itkVTKImageExporter and a vtkImageImporter. It takes care of the details related to the connection of ITK and VTK pipelines. The User will perceive this filter as an adaptor to which an itk::Image can be plugged as input and a vtkImage is produced as output. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classitk_1_1_image_to_v_t_k_image_filter_a4676ef1161730b61cddaf6ac892662f3}{
+\index{itk::ImageToVTKImageFilter@{itk::ImageToVTKImageFilter}!InputImageType@{InputImageType}}
+\index{InputImageType@{InputImageType}!itk::ImageToVTKImageFilter@{itk::ImageToVTKImageFilter}}
+\subsubsection[{InputImageType}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TInputImage $>$ typedef TInputImage {\bf itk::ImageToVTKImageFilter}$<$ TInputImage $>$::{\bf InputImageType}}}
+\label{classitk_1_1_image_to_v_t_k_image_filter_a4676ef1161730b61cddaf6ac892662f3}
+
+
+Some typedefs. 
+
+\hypertarget{classitk_1_1_image_to_v_t_k_image_filter_aa50164b556fb84d67e8631f5649d13e9}{
+\index{itk::ImageToVTKImageFilter@{itk::ImageToVTKImageFilter}!Self@{Self}}
+\index{Self@{Self}!itk::ImageToVTKImageFilter@{itk::ImageToVTKImageFilter}}
+\subsubsection[{Self}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TInputImage $>$ typedef {\bf ImageToVTKImageFilter} {\bf itk::ImageToVTKImageFilter}$<$ TInputImage $>$::{\bf Self}}}
+\label{classitk_1_1_image_to_v_t_k_image_filter_aa50164b556fb84d67e8631f5649d13e9}
+
+
+Standard class typedefs. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classitk_1_1_image_to_v_t_k_image_filter_a28148e706b46194ef4a812873e67f8b7}{
+\index{itk::ImageToVTKImageFilter@{itk::ImageToVTKImageFilter}!GetExporter@{GetExporter}}
+\index{GetExporter@{GetExporter}!itk::ImageToVTKImageFilter@{itk::ImageToVTKImageFilter}}
+\subsubsection[{GetExporter}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TInputImage $>$ ExporterFilterType$\ast$ {\bf itk::ImageToVTKImageFilter}$<$ TInputImage $>$::GetExporter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{classitk_1_1_image_to_v_t_k_image_filter_a28148e706b46194ef4a812873e67f8b7}
+
+
+Return the internal ITK image exporter filter. 
+
+This is intended to facilitate users the access to methods in the exporter \hypertarget{classitk_1_1_image_to_v_t_k_image_filter_ac7662c1a28f84be41a998348122aa1e6}{
+\index{itk::ImageToVTKImageFilter@{itk::ImageToVTKImageFilter}!GetImporter@{GetImporter}}
+\index{GetImporter@{GetImporter}!itk::ImageToVTKImageFilter@{itk::ImageToVTKImageFilter}}
+\subsubsection[{GetImporter}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TInputImage $>$ vtkImageImport$\ast$ {\bf itk::ImageToVTKImageFilter}$<$ TInputImage $>$::GetImporter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{classitk_1_1_image_to_v_t_k_image_filter_ac7662c1a28f84be41a998348122aa1e6}
+
+
+Return the internal VTK image importer filter. 
+
+This is intended to facilitate users the access to methods in the importer \hypertarget{classitk_1_1_image_to_v_t_k_image_filter_ac97a69a27292b89146503bac2182cd76}{
+\index{itk::ImageToVTKImageFilter@{itk::ImageToVTKImageFilter}!GetOutput@{GetOutput}}
+\index{GetOutput@{GetOutput}!itk::ImageToVTKImageFilter@{itk::ImageToVTKImageFilter}}
+\subsubsection[{GetOutput}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TInputImage $>$ vtkImageData$\ast$ {\bf itk::ImageToVTKImageFilter}$<$ TInputImage $>$::GetOutput (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{classitk_1_1_image_to_v_t_k_image_filter_ac97a69a27292b89146503bac2182cd76}
+
+
+Get the output in the form of a vtkImage. 
+
+This call is delegated to the internal vtkImageImporter filter \hypertarget{classitk_1_1_image_to_v_t_k_image_filter_aa710a87cb782de6debe331a86646f7b0}{
+\index{itk::ImageToVTKImageFilter@{itk::ImageToVTKImageFilter}!itkNewMacro@{itkNewMacro}}
+\index{itkNewMacro@{itkNewMacro}!itk::ImageToVTKImageFilter@{itk::ImageToVTKImageFilter}}
+\subsubsection[{itkNewMacro}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TInputImage $>$ {\bf itk::ImageToVTKImageFilter}$<$ TInputImage $>$::itkNewMacro (
+\begin{DoxyParamCaption}
+\item[{{\bf Self}}]{}
+\end{DoxyParamCaption}
+)}}
+\label{classitk_1_1_image_to_v_t_k_image_filter_aa710a87cb782de6debe331a86646f7b0}
+
+
+Method for creation through the object factory. 
+
+\hypertarget{classitk_1_1_image_to_v_t_k_image_filter_a2660682c96fa14496eaff4226d9d6f38}{
+\index{itk::ImageToVTKImageFilter@{itk::ImageToVTKImageFilter}!itkTypeMacro@{itkTypeMacro}}
+\index{itkTypeMacro@{itkTypeMacro}!itk::ImageToVTKImageFilter@{itk::ImageToVTKImageFilter}}
+\subsubsection[{itkTypeMacro}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class TInputImage $>$ {\bf itk::ImageToVTKImageFilter}$<$ TInputImage $>$::itkTypeMacro (
+\begin{DoxyParamCaption}
+\item[{{\bf ImageToVTKImageFilter}$<$ TInputImage $>$}]{, }
+\item[{{\bf ProcessObject}}]{}
+\end{DoxyParamCaption}
+)}}
+\label{classitk_1_1_image_to_v_t_k_image_filter_a2660682c96fa14496eaff4226d9d6f38}
+
+
+Run-\/time type information (and related methods). 
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+itkImageToVTKImageFilter.h\end{DoxyCompactItemize}

@@ -1,0 +1,121 @@
+\hypertarget{classassignment_1_1_trilinear_interpolator}{
+\section{assignment::TrilinearInterpolator Class Reference}
+\label{classassignment_1_1_trilinear_interpolator}\index{assignment::TrilinearInterpolator@{assignment::TrilinearInterpolator}}
+}
+
+
+Interpolates a \hyperlink{structmesh_1_1_mesh_1_1_point}{mesh::Mesh::Point} trilinear.  
+
+
+
+
+{\ttfamily \#include $<$TrilinearInterpolator.h$>$}
+
+
+
+Inheritance diagram for assignment::TrilinearInterpolator:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{classassignment_1_1_trilinear_interpolator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for assignment::TrilinearInterpolator:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=385pt]{classassignment_1_1_trilinear_interpolator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classassignment_1_1_trilinear_interpolator_adbce93cb66d09622a5bde9fd51541783}{TrilinearInterpolator} (QSharedPointer$<$ \hyperlink{classctimage_1_1_c_t_image}{CTImage} $>$, double $\ast$)
+\begin{DoxyCompactList}\small\item\em Creates a new trilinear interpolator with a given \hyperlink{classctimage_1_1_c_t_image}{ctimage::CTImage} and the values used for the interpolation. \item\end{DoxyCompactList}\item 
+double \hyperlink{classassignment_1_1_trilinear_interpolator_a0972e2f1ebd828b832e94760c34b80c6}{getValue} (\hyperlink{structmesh_1_1_mesh_1_1_point}{Mesh::Point} $\ast$)
+\begin{DoxyCompactList}\small\item\em Gets the interpolated value for a specified \hyperlink{structmesh_1_1_mesh_1_1_point}{mesh::Mesh::Point}. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classassignment_1_1_trilinear_interpolator_a1b3999fc976f482b1ea41159a1170cd7}{interpolate} (double \hyperlink{classassignment_1_1_interpolator3_d_afb656ddf8789b483a8570f7a93985c0c}{x0}, double \hyperlink{classassignment_1_1_interpolator3_d_ab8f3111100189b5730621f77fe54467e}{x1}, double v0, double v1, double x)
+\begin{DoxyCompactList}\small\item\em Returns the result of linear interpolation between two points. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interpolates a \hyperlink{structmesh_1_1_mesh_1_1_point}{mesh::Mesh::Point} trilinear. \begin{DoxyNote}{Note}
+\href{http://en.wikipedia.org/wiki/Trilinear_interpolation}{\tt http://en.wikipedia.org/wiki/Trilinear\_\-interpolation} 
+\end{DoxyNote}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classassignment_1_1_trilinear_interpolator_adbce93cb66d09622a5bde9fd51541783}{
+\index{assignment::TrilinearInterpolator@{assignment::TrilinearInterpolator}!TrilinearInterpolator@{TrilinearInterpolator}}
+\index{TrilinearInterpolator@{TrilinearInterpolator}!assignment::TrilinearInterpolator@{assignment::TrilinearInterpolator}}
+\subsubsection[{TrilinearInterpolator}]{\setlength{\rightskip}{0pt plus 5cm}assignment::TrilinearInterpolator::TrilinearInterpolator (
+\begin{DoxyParamCaption}
+\item[{QSharedPointer$<$ {\bf CTImage} $>$}]{ ctImage, }
+\item[{double $\ast$}]{ values}
+\end{DoxyParamCaption}
+)}}
+\label{classassignment_1_1_trilinear_interpolator_adbce93cb66d09622a5bde9fd51541783}
+
+
+Creates a new trilinear interpolator with a given \hyperlink{classctimage_1_1_c_t_image}{ctimage::CTImage} and the values used for the interpolation. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em ctImage}]The \hyperlink{classctimage_1_1_c_t_image}{ctimage::CTImage}, which is used only for morphologic information. The values of the \hyperlink{classctimage_1_1_c_t_image}{ctimage::CTImage} are not used for the interpolation \item[{\em values}]The values used for the interpolation. The values array needs to be the size of the pixel count of the \hyperlink{classctimage_1_1_c_t_image}{ctimage::CTImage} \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classassignment_1_1_trilinear_interpolator_a0972e2f1ebd828b832e94760c34b80c6}{
+\index{assignment::TrilinearInterpolator@{assignment::TrilinearInterpolator}!getValue@{getValue}}
+\index{getValue@{getValue}!assignment::TrilinearInterpolator@{assignment::TrilinearInterpolator}}
+\subsubsection[{getValue}]{\setlength{\rightskip}{0pt plus 5cm}double assignment::TrilinearInterpolator::getValue (
+\begin{DoxyParamCaption}
+\item[{{\bf Mesh::Point} $\ast$}]{ p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classassignment_1_1_trilinear_interpolator_a0972e2f1ebd828b832e94760c34b80c6}
+
+
+Gets the interpolated value for a specified \hyperlink{structmesh_1_1_mesh_1_1_point}{mesh::Mesh::Point}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em p}]The point to be interpolated \end{DoxyParams}
+
+
+Implements \hyperlink{classassignment_1_1_interpolator3_d_ac6ed5447418b7980d5ad2f12e853b35f}{assignment::Interpolator3D}.
+
+\hypertarget{classassignment_1_1_trilinear_interpolator_a1b3999fc976f482b1ea41159a1170cd7}{
+\index{assignment::TrilinearInterpolator@{assignment::TrilinearInterpolator}!interpolate@{interpolate}}
+\index{interpolate@{interpolate}!assignment::TrilinearInterpolator@{assignment::TrilinearInterpolator}}
+\subsubsection[{interpolate}]{\setlength{\rightskip}{0pt plus 5cm}double assignment::TrilinearInterpolator::interpolate (
+\begin{DoxyParamCaption}
+\item[{double}]{ x0, }
+\item[{double}]{ x1, }
+\item[{double}]{ v0, }
+\item[{double}]{ v1, }
+\item[{double}]{ x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classassignment_1_1_trilinear_interpolator_a1b3999fc976f482b1ea41159a1170cd7}
+
+
+Returns the result of linear interpolation between two points. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em x0}]The first sample point's coordinate \item[{\em x1}]The second sample point's coordinate \item[{\em v0}]The first sample point's value \item[{\em v1}]The second sample point's value \item[{\em x}]The coordinate of the point to be interpolated \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The interpolation result 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+assignment/TrilinearInterpolator.h\item 
+assignment/TrilinearInterpolator.cxx\end{DoxyCompactItemize}

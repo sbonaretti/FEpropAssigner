@@ -1,0 +1,149 @@
+\hypertarget{classassignment_1_1_node_property_assigner}{
+\section{assignment::NodePropertyAssigner Class Reference}
+\label{classassignment_1_1_node_property_assigner}\index{assignment::NodePropertyAssigner@{assignment::NodePropertyAssigner}}
+}
+
+
+Assigns CT image data to the nodes of a \hyperlink{classmesh_1_1_mesh}{mesh::Mesh}.  
+
+
+
+
+{\ttfamily \#include $<$NodePropertyAssigner.h$>$}
+
+
+
+Inheritance diagram for assignment::NodePropertyAssigner:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{classassignment_1_1_node_property_assigner__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for assignment::NodePropertyAssigner:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classassignment_1_1_node_property_assigner__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classassignment_1_1_node_property_assigner_afc4761487858cccc6a66dfa949984e3a}{NodePropertyAssigner} (QSharedPointer$<$ \hyperlink{classctimage_1_1_c_t_image}{CTImage} $>$ ctimage, QSharedPointer$<$ \hyperlink{classmesh_1_1_mesh}{Mesh} $>$ \hyperlink{classassignment_1_1_node_property_assigner_a91e04d259955ce0ae93d02760ac2945e}{mesh}, int interpolationMethod, double \hyperlink{classassignment_1_1_node_property_assigner_a7bac7369b89b3351b2ff889114daaf6a}{a}, double \hyperlink{classassignment_1_1_node_property_assigner_a8d2dcf867efc99c60f076cc5d1d55114}{b})
+\begin{DoxyCompactList}\small\item\em Creates a new assigner. \item\end{DoxyCompactList}\item 
+\hypertarget{classassignment_1_1_node_property_assigner_a9c023c3f2d6dd830f6c64958650bf177}{
+QSharedPointer$<$ \hyperlink{classmesh_1_1_mesh}{Mesh} $>$ \hyperlink{classassignment_1_1_node_property_assigner_a9c023c3f2d6dd830f6c64958650bf177}{getMesh} ()}
+\label{classassignment_1_1_node_property_assigner_a9c023c3f2d6dd830f6c64958650bf177}
+
+\begin{DoxyCompactList}\small\item\em Gets the \hyperlink{classmesh_1_1_mesh}{mesh::Mesh} that is used for the assignment. \item\end{DoxyCompactList}\item 
+\hypertarget{classassignment_1_1_node_property_assigner_ae157e095fda36f722c9ddb3d2a2492af}{
+double \hyperlink{classassignment_1_1_node_property_assigner_ae157e095fda36f722c9ddb3d2a2492af}{getMinValue} ()}
+\label{classassignment_1_1_node_property_assigner_ae157e095fda36f722c9ddb3d2a2492af}
+
+\begin{DoxyCompactList}\small\item\em Gets the minimum value of the assignment. \item\end{DoxyCompactList}\item 
+\hypertarget{classassignment_1_1_node_property_assigner_a9ff48294b2759b8c46d2673cd3f87731}{
+double \hyperlink{classassignment_1_1_node_property_assigner_a9ff48294b2759b8c46d2673cd3f87731}{getMaxValue} ()}
+\label{classassignment_1_1_node_property_assigner_a9ff48294b2759b8c46d2673cd3f87731}
+
+\begin{DoxyCompactList}\small\item\em Gets the maximum value of the assignment. \item\end{DoxyCompactList}\item 
+\hypertarget{classassignment_1_1_node_property_assigner_afc2fb3b88d92a968c65b5759a9fe1411}{
+vector$<$ double $>$ $\ast$ \hyperlink{classassignment_1_1_node_property_assigner_afc2fb3b88d92a968c65b5759a9fe1411}{getNodeValues} ()}
+\label{classassignment_1_1_node_property_assigner_afc2fb3b88d92a968c65b5759a9fe1411}
+
+\begin{DoxyCompactList}\small\item\em Gets the assigned node values. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double $\ast$ \hyperlink{classassignment_1_1_node_property_assigner_af6a16969141073a2af5b898a3b69cf55}{ashDensityRev} (int n, \hyperlink{classctimage_1_1_c_t_image_ab3bf32a276d168a705973d8d6c698cec}{CTImage::CTPixelType} $\ast$ct)
+\begin{DoxyCompactList}\small\item\em Returns the calculated density of a CT image's pixels. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classassignment_1_1_node_property_assigner_a91e04d259955ce0ae93d02760ac2945e}{
+QSharedPointer$<$ \hyperlink{classmesh_1_1_mesh}{Mesh} $>$ \hyperlink{classassignment_1_1_node_property_assigner_a91e04d259955ce0ae93d02760ac2945e}{mesh}}
+\label{classassignment_1_1_node_property_assigner_a91e04d259955ce0ae93d02760ac2945e}
+
+\begin{DoxyCompactList}\small\item\em The \hyperlink{classmesh_1_1_mesh}{mesh::Mesh} the values are assigned to. \item\end{DoxyCompactList}\item 
+\hypertarget{classassignment_1_1_node_property_assigner_ab16e117511d9e34142a7052f665ea118}{
+vector$<$ double $>$ \hyperlink{classassignment_1_1_node_property_assigner_ab16e117511d9e34142a7052f665ea118}{nodeValues}}
+\label{classassignment_1_1_node_property_assigner_ab16e117511d9e34142a7052f665ea118}
+
+\begin{DoxyCompactList}\small\item\em A vector containing the assigned node values. \item\end{DoxyCompactList}\item 
+\hypertarget{classassignment_1_1_node_property_assigner_a56ca01884fce9dde775e3d5f83ef553b}{
+double \hyperlink{classassignment_1_1_node_property_assigner_a56ca01884fce9dde775e3d5f83ef553b}{minValue}}
+\label{classassignment_1_1_node_property_assigner_a56ca01884fce9dde775e3d5f83ef553b}
+
+\begin{DoxyCompactList}\small\item\em The minimum value of the assignment. \item\end{DoxyCompactList}\item 
+\hypertarget{classassignment_1_1_node_property_assigner_a117253a9d4f13c778dda1d6fbf09b885}{
+double \hyperlink{classassignment_1_1_node_property_assigner_a117253a9d4f13c778dda1d6fbf09b885}{maxValue}}
+\label{classassignment_1_1_node_property_assigner_a117253a9d4f13c778dda1d6fbf09b885}
+
+\begin{DoxyCompactList}\small\item\em The maximum value of the assignment. \item\end{DoxyCompactList}\item 
+\hypertarget{classassignment_1_1_node_property_assigner_a7bac7369b89b3351b2ff889114daaf6a}{
+double \hyperlink{classassignment_1_1_node_property_assigner_a7bac7369b89b3351b2ff889114daaf6a}{a}}
+\label{classassignment_1_1_node_property_assigner_a7bac7369b89b3351b2ff889114daaf6a}
+
+\begin{DoxyCompactList}\small\item\em The first parameter for the assignment law. \item\end{DoxyCompactList}\item 
+\hypertarget{classassignment_1_1_node_property_assigner_a8d2dcf867efc99c60f076cc5d1d55114}{
+double \hyperlink{classassignment_1_1_node_property_assigner_a8d2dcf867efc99c60f076cc5d1d55114}{b}}
+\label{classassignment_1_1_node_property_assigner_a8d2dcf867efc99c60f076cc5d1d55114}
+
+\begin{DoxyCompactList}\small\item\em The second parameter for the assignment law. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Assigns CT image data to the nodes of a \hyperlink{classmesh_1_1_mesh}{mesh::Mesh}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classassignment_1_1_node_property_assigner_afc4761487858cccc6a66dfa949984e3a}{
+\index{assignment::NodePropertyAssigner@{assignment::NodePropertyAssigner}!NodePropertyAssigner@{NodePropertyAssigner}}
+\index{NodePropertyAssigner@{NodePropertyAssigner}!assignment::NodePropertyAssigner@{assignment::NodePropertyAssigner}}
+\subsubsection[{NodePropertyAssigner}]{\setlength{\rightskip}{0pt plus 5cm}assignment::NodePropertyAssigner::NodePropertyAssigner (
+\begin{DoxyParamCaption}
+\item[{QSharedPointer$<$ {\bf CTImage} $>$}]{ ctimage, }
+\item[{QSharedPointer$<$ {\bf Mesh} $>$}]{ mesh, }
+\item[{int}]{ interpolationMethod, }
+\item[{double}]{ a, }
+\item[{double}]{ b}
+\end{DoxyParamCaption}
+)}}
+\label{classassignment_1_1_node_property_assigner_afc4761487858cccc6a66dfa949984e3a}
+
+
+Creates a new assigner. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em ctimage}]The \hyperlink{classctimage_1_1_c_t_image}{ctimage::CTImage} \item[{\em mesh}]The \hyperlink{classmesh_1_1_mesh}{mesh::Mesh} \item[{\em interpolationMethod}]The interpolation method \item[{\em a}]The first parameter for the assignment law \item[{\em b}]The second parameter for the assignment law \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classassignment_1_1_node_property_assigner_af6a16969141073a2af5b898a3b69cf55}{
+\index{assignment::NodePropertyAssigner@{assignment::NodePropertyAssigner}!ashDensityRev@{ashDensityRev}}
+\index{ashDensityRev@{ashDensityRev}!assignment::NodePropertyAssigner@{assignment::NodePropertyAssigner}}
+\subsubsection[{ashDensityRev}]{\setlength{\rightskip}{0pt plus 5cm}double $\ast$ assignment::NodePropertyAssigner::ashDensityRev (
+\begin{DoxyParamCaption}
+\item[{int}]{ n, }
+\item[{{\bf CTImage::CTPixelType} $\ast$}]{ ct}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classassignment_1_1_node_property_assigner_af6a16969141073a2af5b898a3b69cf55}
+
+
+Returns the calculated density of a CT image's pixels. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em n}]The total pixel count \item[{\em ct}]The CT image's pixels \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The calculated density values 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+assignment/NodePropertyAssigner.h\item 
+assignment/NodePropertyAssigner.cxx\end{DoxyCompactItemize}

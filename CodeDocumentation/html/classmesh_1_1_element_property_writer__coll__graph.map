@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$classmesh_1_1_property_writer.html" title="Abstract writer class to write a mesh file with property assignment information to disk..." alt="" coords="5,248,176,277"/>
+<area shape="rect" id="node6" href="$classassignment_1_1_element_property_assigner.html" title="Assigns CT image data to the elements of a mesh::Mesh." alt="" coords="200,248,483,277"/>
+<area shape="rect" id="node8" href="$classassignment_1_1_node_property_assigner.html" title="Assigns CT image data to the nodes of a mesh::Mesh." alt="" coords="177,152,436,181"/>
+</map>

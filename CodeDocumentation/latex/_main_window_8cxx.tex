@@ -1,0 +1,64 @@
+\hypertarget{_main_window_8cxx}{
+\section{gui/MainWindow.cxx File Reference}
+\label{_main_window_8cxx}\index{gui/MainWindow.cxx@{gui/MainWindow.cxx}}
+}
+{\ttfamily \#include \char`\"{}MainWindow.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}/Users/andi/Documents/Fachhochschule/8semester8/Thesis/Cmake\_\-Sources/PropertyAssignment/src/gui/ui\_\-mainwindow.h\char`\"{}}\par
+{\ttfamily \#include $<$/Users/andi/Documents/Fachhochschule/8semester8/Thesis/Cmake\_\-Sources/PropertyAssignment/src/gui/sstream$>$}\par
+{\ttfamily \#include $<$/Users/andi/Documents/Fachhochschule/8semester8/Thesis/Cmake\_\-Sources/PropertyAssignment/src/gui/exception$>$}\par
+{\ttfamily \#include $<$/Users/andi/Documents/Fachhochschule/8semester8/Thesis/Cmake\_\-Sources/PropertyAssignment/src/gui/vtkSmartPointer.h$>$}\par
+{\ttfamily \#include $<$/Users/andi/Documents/Fachhochschule/8semester8/Thesis/Cmake\_\-Sources/PropertyAssignment/src/gui/vtkSphereSource.h$>$}\par
+{\ttfamily \#include $<$/Users/andi/Documents/Fachhochschule/8semester8/Thesis/Cmake\_\-Sources/PropertyAssignment/src/gui/vtkPolyDataMapper.h$>$}\par
+{\ttfamily \#include $<$/Users/andi/Documents/Fachhochschule/8semester8/Thesis/Cmake\_\-Sources/PropertyAssignment/src/gui/vtkActor.h$>$}\par
+{\ttfamily \#include $<$/Users/andi/Documents/Fachhochschule/8semester8/Thesis/Cmake\_\-Sources/PropertyAssignment/src/gui/vtkImageViewer.h$>$}\par
+{\ttfamily \#include $<$/Users/andi/Documents/Fachhochschule/8semester8/Thesis/Cmake\_\-Sources/PropertyAssignment/src/gui/vtkRenderWindowInteractor.h$>$}\par
+{\ttfamily \#include $<$/Users/andi/Documents/Fachhochschule/8semester8/Thesis/Cmake\_\-Sources/PropertyAssignment/src/gui/vtkInteractorStyleImage.h$>$}\par
+{\ttfamily \#include $<$/Users/andi/Documents/Fachhochschule/8semester8/Thesis/Cmake\_\-Sources/PropertyAssignment/src/gui/vtkRenderer.h$>$}\par
+{\ttfamily \#include $<$/Users/andi/Documents/Fachhochschule/8semester8/Thesis/Cmake\_\-Sources/PropertyAssignment/src/gui/vtkJPEGReader.h$>$}\par
+{\ttfamily \#include $<$/Users/andi/Documents/Fachhochschule/8semester8/Thesis/Cmake\_\-Sources/PropertyAssignment/src/gui/vtkStructuredPointsReader.h$>$}\par
+{\ttfamily \#include $<$/Users/andi/Documents/Fachhochschule/8semester8/Thesis/Cmake\_\-Sources/PropertyAssignment/src/gui/vtkContourFilter.h$>$}\par
+{\ttfamily \#include $<$/Users/andi/Documents/Fachhochschule/8semester8/Thesis/Cmake\_\-Sources/PropertyAssignment/src/gui/vtkProperty.h$>$}\par
+{\ttfamily \#include $<$/Users/andi/Documents/Fachhochschule/8semester8/Thesis/Cmake\_\-Sources/PropertyAssignment/src/gui/vtkGlyph3D.h$>$}\par
+{\ttfamily \#include $<$/Users/andi/Documents/Fachhochschule/8semester8/Thesis/Cmake\_\-Sources/PropertyAssignment/src/gui/vtkPointData.h$>$}\par
+{\ttfamily \#include $<$/Users/andi/Documents/Fachhochschule/8semester8/Thesis/Cmake\_\-Sources/PropertyAssignment/src/gui/vtkCubeSource.h$>$}\par
+{\ttfamily \#include $<$/Users/andi/Documents/Fachhochschule/8semester8/Thesis/Cmake\_\-Sources/PropertyAssignment/src/gui/vtkMaskPoints.h$>$}\par
+{\ttfamily \#include $<$/Users/andi/Documents/Fachhochschule/8semester8/Thesis/Cmake\_\-Sources/PropertyAssignment/src/gui/vtkLookupTable.h$>$}\par
+{\ttfamily \#include $<$/Users/andi/Documents/Fachhochschule/8semester8/Thesis/Cmake\_\-Sources/PropertyAssignment/src/gui/vtkDataSetMapper.h$>$}\par
+{\ttfamily \#include $<$/Users/andi/Documents/Fachhochschule/8semester8/Thesis/Cmake\_\-Sources/PropertyAssignment/src/gui/vtkDoubleArray.h$>$}\par
+{\ttfamily \#include $<$/Users/andi/Documents/Fachhochschule/8semester8/Thesis/Cmake\_\-Sources/PropertyAssignment/src/gui/vtkLegendScaleActor.h$>$}\par
+{\ttfamily \#include $<$/Users/andi/Documents/Fachhochschule/8semester8/Thesis/Cmake\_\-Sources/PropertyAssignment/src/gui/vtkAxisActor2D.h$>$}\par
+{\ttfamily \#include $<$/Users/andi/Documents/Fachhochschule/8semester8/Thesis/Cmake\_\-Sources/PropertyAssignment/src/gui/qslider.h$>$}\par
+{\ttfamily \#include $<$/Users/andi/Documents/Fachhochschule/8semester8/Thesis/Cmake\_\-Sources/PropertyAssignment/src/gui/qobject.h$>$}\par
+{\ttfamily \#include $<$/Users/andi/Documents/Fachhochschule/8semester8/Thesis/Cmake\_\-Sources/PropertyAssignment/src/gui/QFileDialog$>$}\par
+{\ttfamily \#include $<$/Users/andi/Documents/Fachhochschule/8semester8/Thesis/Cmake\_\-Sources/PropertyAssignment/src/gui/QErrorMessage$>$}\par
+{\ttfamily \#include $<$/Users/andi/Documents/Fachhochschule/8semester8/Thesis/Cmake\_\-Sources/PropertyAssignment/src/gui/QMessageBox$>$}\par
+{\ttfamily \#include $<$/Users/andi/Documents/Fachhochschule/8semester8/Thesis/Cmake\_\-Sources/PropertyAssignment/src/gui/QCheckBox$>$}\par
+{\ttfamily \#include \char`\"{}/Users/andi/Documents/Fachhochschule/8semester8/Thesis/Cmake\_\-Sources/PropertyAssignment/src/gui/Logger.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}/Users/andi/Documents/Fachhochschule/8semester8/Thesis/Cmake\_\-Sources/PropertyAssignment/src/gui/Configuration.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}/Users/andi/Documents/Fachhochschule/8semester8/Thesis/Cmake\_\-Sources/PropertyAssignment/src/gui/MeshLoader.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}/Users/andi/Documents/Fachhochschule/8semester8/Thesis/Cmake\_\-Sources/PropertyAssignment/src/gui/CTImage.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}/Users/andi/Documents/Fachhochschule/8semester8/Thesis/Cmake\_\-Sources/PropertyAssignment/src/gui/AnsysMeshLoader.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}/Users/andi/Documents/Fachhochschule/8semester8/Thesis/Cmake\_\-Sources/PropertyAssignment/src/gui/AbaqusMeshLoader.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}/Users/andi/Documents/Fachhochschule/8semester8/Thesis/Cmake\_\-Sources/PropertyAssignment/src/gui/DicomCTImageReader.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}/Users/andi/Documents/Fachhochschule/8semester8/Thesis/Cmake\_\-Sources/PropertyAssignment/src/gui/MetaimageCTImageReader.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}/Users/andi/Documents/Fachhochschule/8semester8/Thesis/Cmake\_\-Sources/PropertyAssignment/src/gui/NodePropertyAssigner.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}/Users/andi/Documents/Fachhochschule/8semester8/Thesis/Cmake\_\-Sources/PropertyAssignment/src/gui/VtkPolyDataCreator.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}/Users/andi/Documents/Fachhochschule/8semester8/Thesis/Cmake\_\-Sources/PropertyAssignment/src/gui/itkImageToVTKImageFilter.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}/Users/andi/Documents/Fachhochschule/8semester8/Thesis/Cmake\_\-Sources/PropertyAssignment/src/gui/AssignmentActor.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}/Users/andi/Documents/Fachhochschule/8semester8/Thesis/Cmake\_\-Sources/PropertyAssignment/src/gui/VolumeCorrector.h\char`\"{}}\par
+Include dependency graph for MainWindow.cxx:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_main_window_8cxx__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \hyperlink{namespacegui}{gui}
+
+
+\begin{DoxyCompactList}\small\item\em Contains classes for the graphical user interface mode of the application. \item\end{DoxyCompactList}
+
+\end{DoxyCompactItemize}

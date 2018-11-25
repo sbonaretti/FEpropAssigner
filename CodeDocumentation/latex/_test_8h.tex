@@ -1,0 +1,79 @@
+\hypertarget{_test_8h}{
+\section{test/Test.h File Reference}
+\label{_test_8h}\index{test/Test.h@{test/Test.h}}
+}
+{\ttfamily \#include $<$/Users/andi/Documents/Fachhochschule/8semester8/Thesis/Cmake\_\-Sources/PropertyAssignment/src/test/iostream$>$}\par
+{\ttfamily \#include $<$/Users/andi/Documents/Fachhochschule/8semester8/Thesis/Cmake\_\-Sources/PropertyAssignment/src/test/typeinfo$>$}\par
+Include dependency graph for Test.h:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_test_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_test_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classtest_1_1_test}{test::Test}
+\begin{DoxyCompactList}\small\item\em Abstract \hyperlink{classtest_1_1_test}{Test} class. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \hyperlink{namespacetest}{test}
+
+
+\begin{DoxyCompactList}\small\item\em Contains unit tests. \item\end{DoxyCompactList}
+
+\end{DoxyCompactItemize}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_test_8h_a09178dfb4256e8cb70d7d11e004602eb}{RUN}(test)
+\item 
+\#define \hyperlink{_test_8h_a83ff35fef11cb1c915ec7b6ef6a2fe4e}{ASSERT}(message, test)~do \{ if (!(test)) return message; \} while (0)
+\item 
+\#define \hyperlink{_test_8h_a8afdb63dd7f053446aa1a5ce66e55651}{FAIL}(message)~do \{ return message; \} while (0)
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{_test_8h_a83ff35fef11cb1c915ec7b6ef6a2fe4e}{
+\index{Test.h@{Test.h}!ASSERT@{ASSERT}}
+\index{ASSERT@{ASSERT}!Test.h@{Test.h}}
+\subsubsection[{ASSERT}]{\setlength{\rightskip}{0pt plus 5cm}\#define ASSERT(
+\begin{DoxyParamCaption}
+\item[{}]{message, }
+\item[{}]{test}
+\end{DoxyParamCaption}
+)~do \{ if (!(test)) return message; \} while (0)}}
+\label{_test_8h_a83ff35fef11cb1c915ec7b6ef6a2fe4e}
+\hypertarget{_test_8h_a8afdb63dd7f053446aa1a5ce66e55651}{
+\index{Test.h@{Test.h}!FAIL@{FAIL}}
+\index{FAIL@{FAIL}!Test.h@{Test.h}}
+\subsubsection[{FAIL}]{\setlength{\rightskip}{0pt plus 5cm}\#define FAIL(
+\begin{DoxyParamCaption}
+\item[{}]{message}
+\end{DoxyParamCaption}
+)~do \{ return message; \} while (0)}}
+\label{_test_8h_a8afdb63dd7f053446aa1a5ce66e55651}
+\hypertarget{_test_8h_a09178dfb4256e8cb70d7d11e004602eb}{
+\index{Test.h@{Test.h}!RUN@{RUN}}
+\index{RUN@{RUN}!Test.h@{Test.h}}
+\subsubsection[{RUN}]{\setlength{\rightskip}{0pt plus 5cm}\#define RUN(
+\begin{DoxyParamCaption}
+\item[{}]{test}
+\end{DoxyParamCaption}
+)}}
+\label{_test_8h_a09178dfb4256e8cb70d7d11e004602eb}
+{\bfseries Value:}
+\begin{DoxyCode}
+do { test t; cout << "Running: " << typeid(t).name() << "\n";\
+        char* message = t.run(); if (message) return message; } while (0)
+\end{DoxyCode}

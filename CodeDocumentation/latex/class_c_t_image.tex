@@ -1,0 +1,160 @@
+\hypertarget{class_c_t_image}{
+\section{CTImage Class Reference}
+\label{class_c_t_image}\index{CTImage@{CTImage}}
+}
+
+
+Inheritance diagram for CTImage:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{class_c_t_image__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_t_image_a2408331e8b73ddbffdb8130ddb221d1c}{
+typedef signed short {\bfseries CTPixelType}}
+\label{class_c_t_image_a2408331e8b73ddbffdb8130ddb221d1c}
+
+\item 
+\hypertarget{class_c_t_image_add235b8efbef09ed661c3bfe771812ad}{
+typedef itk::Image$<$ CTPixelType, Dimension $>$ {\bfseries ItkImageType}}
+\label{class_c_t_image_add235b8efbef09ed661c3bfe771812ad}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_t_image_a7529d1815be93ca599e1e69d0d43de72}{
+CTPixelType $\ast$ {\bfseries getPixelData} ()}
+\label{class_c_t_image_a7529d1815be93ca599e1e69d0d43de72}
+
+\item 
+\hypertarget{class_c_t_image_a705dcd66ad91dcb6261d0440ac57f9fb}{
+int {\bfseries getNx} ()}
+\label{class_c_t_image_a705dcd66ad91dcb6261d0440ac57f9fb}
+
+\item 
+\hypertarget{class_c_t_image_ab65ce01a52ebee47b5fa4e52b0d0490f}{
+int {\bfseries getNy} ()}
+\label{class_c_t_image_ab65ce01a52ebee47b5fa4e52b0d0490f}
+
+\item 
+\hypertarget{class_c_t_image_a6ddad3d09ae365d73c6886fbbf537d02}{
+int {\bfseries getNz} ()}
+\label{class_c_t_image_a6ddad3d09ae365d73c6886fbbf537d02}
+
+\item 
+\hypertarget{class_c_t_image_ada51c93e1c9caa3f59a58bb0f504f85b}{
+int {\bfseries getNsum} ()}
+\label{class_c_t_image_ada51c93e1c9caa3f59a58bb0f504f85b}
+
+\item 
+\hypertarget{class_c_t_image_a05ae30369fdb56f51a3640d1e9eec380}{
+double {\bfseries getSx} ()}
+\label{class_c_t_image_a05ae30369fdb56f51a3640d1e9eec380}
+
+\item 
+\hypertarget{class_c_t_image_ab90280136f50cf3aa48dcef9535ec966}{
+double {\bfseries getSy} ()}
+\label{class_c_t_image_ab90280136f50cf3aa48dcef9535ec966}
+
+\item 
+\hypertarget{class_c_t_image_a708249b5307e97cd423625ced235c70e}{
+double {\bfseries getSz} ()}
+\label{class_c_t_image_a708249b5307e97cd423625ced235c70e}
+
+\item 
+\hypertarget{class_c_t_image_a12e90bcd694a9dfeef6ad24e4c37f964}{
+double {\bfseries getX0} ()}
+\label{class_c_t_image_a12e90bcd694a9dfeef6ad24e4c37f964}
+
+\item 
+\hypertarget{class_c_t_image_aeba18c34c2108f511a1ef452a1546881}{
+double {\bfseries getY0} ()}
+\label{class_c_t_image_aeba18c34c2108f511a1ef452a1546881}
+
+\item 
+\hypertarget{class_c_t_image_af9f4fbfeb1548ebf58ae681a74bb0b54}{
+double {\bfseries getZ0} ()}
+\label{class_c_t_image_af9f4fbfeb1548ebf58ae681a74bb0b54}
+
+\item 
+\hypertarget{class_c_t_image_a2266bfbf0ff3f1d4c04d6ae05f5eee69}{
+ItkImageType::Pointer {\bfseries getItkImage} ()}
+\label{class_c_t_image_a2266bfbf0ff3f1d4c04d6ae05f5eee69}
+
+\item 
+\hypertarget{class_c_t_image_a811c3f70d241cb7d43bcb872bf71a739}{
+QSharedPointer$<$ \hyperlink{class_c_t_image}{CTImage} $>$ {\bfseries createDeepCopy} ()}
+\label{class_c_t_image_a811c3f70d241cb7d43bcb872bf71a739}
+
+\item 
+\hypertarget{class_c_t_image_a331eca88c8ed19bb8417ab33027076fc}{
+void {\bfseries write} (string)}
+\label{class_c_t_image_a331eca88c8ed19bb8417ab33027076fc}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_t_image_a34aa610a2249b7586a36c1d45e6cfca8}{
+static const int {\bfseries Dimension} = 3}
+\label{class_c_t_image_a34aa610a2249b7586a36c1d45e6cfca8}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_t_image_a29c83a17b8ea482d51450c00be31f7cb}{
+CTPixelType $\ast$ {\bfseries pixelData}}
+\label{class_c_t_image_a29c83a17b8ea482d51450c00be31f7cb}
+
+\item 
+\hypertarget{class_c_t_image_a9a5d2713d29fc74c6e058f2052699732}{
+int {\bfseries size} \mbox{[}Dimension\mbox{]}}
+\label{class_c_t_image_a9a5d2713d29fc74c6e058f2052699732}
+
+\item 
+\hypertarget{class_c_t_image_aa9a74a5c3f31c1bc62a127cdfad8401f}{
+double {\bfseries spacing} \mbox{[}Dimension\mbox{]}}
+\label{class_c_t_image_aa9a74a5c3f31c1bc62a127cdfad8401f}
+
+\item 
+\hypertarget{class_c_t_image_a28951b7646597ce9c1104738a06fb610}{
+double {\bfseries origin} \mbox{[}Dimension\mbox{]}}
+\label{class_c_t_image_a28951b7646597ce9c1104738a06fb610}
+
+\item 
+\hypertarget{class_c_t_image_a91c32385b0076c38b0729f237b4e88f3}{
+ItkImageType::Pointer {\bfseries itkImage}}
+\label{class_c_t_image_a91c32385b0076c38b0729f237b4e88f3}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_t_image_a5cc1455156c67f189525c313a80fb9fc}{
+class \hyperlink{class_c_t_image_a5cc1455156c67f189525c313a80fb9fc}{DicomCTImageReader}}
+\label{class_c_t_image_a5cc1455156c67f189525c313a80fb9fc}
+
+\item 
+\hypertarget{class_c_t_image_a0966d000a96e20736d2debc5591acef1}{
+class \hyperlink{class_c_t_image_a0966d000a96e20736d2debc5591acef1}{MetaimageCTImageReader}}
+\label{class_c_t_image_a0966d000a96e20736d2debc5591acef1}
+
+\item 
+\hypertarget{class_c_t_image_ac136807d795545b8468400f61e1b95d2}{
+class \hyperlink{class_c_t_image_ac136807d795545b8468400f61e1b95d2}{CTImageReader}}
+\label{class_c_t_image_ac136807d795545b8468400f61e1b95d2}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+CTImage.h\item 
+CTImage.cxx\end{DoxyCompactItemize}

@@ -1,0 +1,97 @@
+\hypertarget{classassignment_1_1_element_property_assigner}{
+\section{assignment::ElementPropertyAssigner Class Reference}
+\label{classassignment_1_1_element_property_assigner}\index{assignment::ElementPropertyAssigner@{assignment::ElementPropertyAssigner}}
+}
+
+
+Assigns CT image data to the elements of a \hyperlink{classmesh_1_1_mesh}{mesh::Mesh}.  
+
+
+
+
+{\ttfamily \#include $<$ElementPropertyAssigner.h$>$}
+
+
+
+Inheritance diagram for assignment::ElementPropertyAssigner:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{classassignment_1_1_element_property_assigner__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for assignment::ElementPropertyAssigner:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classassignment_1_1_element_property_assigner__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classassignment_1_1_element_property_assigner_a6c7993d7aad6990a1aea6f28731d708c}{ElementPropertyAssigner} (QSharedPointer$<$ \hyperlink{classctimage_1_1_c_t_image}{CTImage} $>$, QSharedPointer$<$ \hyperlink{classmesh_1_1_mesh}{Mesh} $>$, int interpolationMethod, double \hyperlink{classassignment_1_1_node_property_assigner_a7bac7369b89b3351b2ff889114daaf6a}{a}, double \hyperlink{classassignment_1_1_node_property_assigner_a8d2dcf867efc99c60f076cc5d1d55114}{b})
+\begin{DoxyCompactList}\small\item\em Creates a new assigner. \item\end{DoxyCompactList}\item 
+vector$<$ double $>$ $\ast$ \hyperlink{classassignment_1_1_element_property_assigner_a3e555b9c99bef921efd6c91ae5ee4c32}{getElementValues} ()
+\begin{DoxyCompactList}\small\item\em Gets the calculated values in ascending element id order. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classassignment_1_1_element_property_assigner_aabce575fea3bca22d13c31b2e7220860}{
+vector$<$ double $>$ \hyperlink{classassignment_1_1_element_property_assigner_aabce575fea3bca22d13c31b2e7220860}{elementValues}}
+\label{classassignment_1_1_element_property_assigner_aabce575fea3bca22d13c31b2e7220860}
+
+\begin{DoxyCompactList}\small\item\em The calculated element values. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Assigns CT image data to the elements of a \hyperlink{classmesh_1_1_mesh}{mesh::Mesh}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classassignment_1_1_element_property_assigner_a6c7993d7aad6990a1aea6f28731d708c}{
+\index{assignment::ElementPropertyAssigner@{assignment::ElementPropertyAssigner}!ElementPropertyAssigner@{ElementPropertyAssigner}}
+\index{ElementPropertyAssigner@{ElementPropertyAssigner}!assignment::ElementPropertyAssigner@{assignment::ElementPropertyAssigner}}
+\subsubsection[{ElementPropertyAssigner}]{\setlength{\rightskip}{0pt plus 5cm}assignment::ElementPropertyAssigner::ElementPropertyAssigner (
+\begin{DoxyParamCaption}
+\item[{QSharedPointer$<$ {\bf CTImage} $>$}]{ ctImage, }
+\item[{QSharedPointer$<$ {\bf Mesh} $>$}]{ mesh, }
+\item[{int}]{ interpolationMethod, }
+\item[{double}]{ a, }
+\item[{double}]{ b}
+\end{DoxyParamCaption}
+)}}
+\label{classassignment_1_1_element_property_assigner_a6c7993d7aad6990a1aea6f28731d708c}
+
+
+Creates a new assigner. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em ctimage}]The \hyperlink{classctimage_1_1_c_t_image}{ctimage::CTImage} \item[{\em mesh}]The \hyperlink{classmesh_1_1_mesh}{mesh::Mesh} \item[{\em interpolationMethod}]The interpolation method \item[{\em a}]The first parameter for the assignment law \item[{\em b}]The second parameter for the assignment law \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classassignment_1_1_element_property_assigner_a3e555b9c99bef921efd6c91ae5ee4c32}{
+\index{assignment::ElementPropertyAssigner@{assignment::ElementPropertyAssigner}!getElementValues@{getElementValues}}
+\index{getElementValues@{getElementValues}!assignment::ElementPropertyAssigner@{assignment::ElementPropertyAssigner}}
+\subsubsection[{getElementValues}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ double $>$ $\ast$ assignment::ElementPropertyAssigner::getElementValues (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classassignment_1_1_element_property_assigner_a3e555b9c99bef921efd6c91ae5ee4c32}
+
+
+Gets the calculated values in ascending element id order. 
+
+\begin{DoxyReturn}{Returns}
+The vector containing the element values 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+assignment/ElementPropertyAssigner.h\item 
+assignment/ElementPropertyAssigner.cxx\end{DoxyCompactItemize}

@@ -1,0 +1,399 @@
+\hypertarget{classgui_1_1_main_window}{
+\section{gui::MainWindow Class Reference}
+\label{classgui_1_1_main_window}\index{gui::MainWindow@{gui::MainWindow}}
+}
+
+
+This class provides the main application window.  
+
+
+
+
+{\ttfamily \#include $<$MainWindow.h$>$}
+
+
+
+Inheritance diagram for gui::MainWindow:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{classgui_1_1_main_window__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for gui::MainWindow:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classgui_1_1_main_window__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgui_1_1_main_window_a712499e7b9b3c9d440d7b19a8865fc9f}{MainWindow} (QWidget $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em Creates a new GUI window. \item\end{DoxyCompactList}\item 
+\hypertarget{classgui_1_1_main_window_ab2de68292a3940a0f7956eb0e999ee04}{
+void \hyperlink{classgui_1_1_main_window_ab2de68292a3940a0f7956eb0e999ee04}{showActor} (vtkSmartPointer$<$ vtkProp $>$, QCheckBox $\ast$)}
+\label{classgui_1_1_main_window_ab2de68292a3940a0f7956eb0e999ee04}
+
+\begin{DoxyCompactList}\small\item\em Displays a specified actor and enables/checks it's corresponding checkbox. \item\end{DoxyCompactList}\item 
+\hypertarget{classgui_1_1_main_window_a5c68f604a32a0c8584be5a7590ad49c4}{
+void \hyperlink{classgui_1_1_main_window_a5c68f604a32a0c8584be5a7590ad49c4}{hideActor} (vtkSmartPointer$<$ vtkProp $>$, QCheckBox $\ast$)}
+\label{classgui_1_1_main_window_a5c68f604a32a0c8584be5a7590ad49c4}
+
+\begin{DoxyCompactList}\small\item\em Hides a specified actor and disables/unchecks it's corresponding checkbox. \item\end{DoxyCompactList}\item 
+\hypertarget{classgui_1_1_main_window_a4fd3872bcad0814f6e4bcc07fa9889bd}{
+void \hyperlink{classgui_1_1_main_window_a4fd3872bcad0814f6e4bcc07fa9889bd}{clear} ()}
+\label{classgui_1_1_main_window_a4fd3872bcad0814f6e4bcc07fa9889bd}
+
+\begin{DoxyCompactList}\small\item\em Sets the window in its initial state. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classgui_1_1_main_window_a62731a7857ecd07560e53a7b4cf0bd8b}{
+void {\bfseries changeEvent} (QEvent $\ast$e)}
+\label{classgui_1_1_main_window_a62731a7857ecd07560e53a7b4cf0bd8b}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classgui_1_1_main_window_ab6bc66d6d29c8ce9c25e42d23ca5796d}{toggleFEMModel} (int state)
+\begin{DoxyCompactList}\small\item\em FEM model checkbox slot. \item\end{DoxyCompactList}\item 
+void \hyperlink{classgui_1_1_main_window_a55e08f5a8915bb4838bdbd31b2bdaf4c}{toggleCTImage} (int state)
+\begin{DoxyCompactList}\small\item\em CT image checkbox slot. \item\end{DoxyCompactList}\item 
+void \hyperlink{classgui_1_1_main_window_a5102f72743b8fd8f6989eb339067e73f}{toggleExtrudedCTImage} (int state)
+\begin{DoxyCompactList}\small\item\em Extruded CT image checkbox slot. \item\end{DoxyCompactList}\item 
+void \hyperlink{classgui_1_1_main_window_ac3f9bab09dfb3646b0ee1be0bd613f20}{toggleAssignment} (int state)
+\begin{DoxyCompactList}\small\item\em Assignment result checkbox slot. \item\end{DoxyCompactList}\item 
+void \hyperlink{classgui_1_1_main_window_a4646ba0d34c86dfe969b285b00c30d5e}{toggleScale} (int state)
+\begin{DoxyCompactList}\small\item\em Scale checkbox slot. \item\end{DoxyCompactList}\item 
+void \hyperlink{classgui_1_1_main_window_a9d49a35ea4419d69f2f89950a8ffbdda}{toggleInterpolationMethod} (bool t)
+\begin{DoxyCompactList}\small\item\em Interpolation method switch slot. \item\end{DoxyCompactList}\item 
+void \hyperlink{classgui_1_1_main_window_a3891bbf7215a4c190a6c5392dadb0a29}{toggleAssignmentMethod} (bool t)
+\begin{DoxyCompactList}\small\item\em Assignment method switch slot. \item\end{DoxyCompactList}\item 
+\hypertarget{classgui_1_1_main_window_ab527d189efca4163ee27ae1ffbf12f94}{
+void \hyperlink{classgui_1_1_main_window_ab527d189efca4163ee27ae1ffbf12f94}{loadAnsys} ()}
+\label{classgui_1_1_main_window_ab527d189efca4163ee27ae1ffbf12f94}
+
+\begin{DoxyCompactList}\small\item\em Ansys load button slot. \item\end{DoxyCompactList}\item 
+\hypertarget{classgui_1_1_main_window_ab146d4d7203ae93b9a50b9a1f0613b55}{
+void \hyperlink{classgui_1_1_main_window_ab146d4d7203ae93b9a50b9a1f0613b55}{loadAbaqus} ()}
+\label{classgui_1_1_main_window_ab146d4d7203ae93b9a50b9a1f0613b55}
+
+\begin{DoxyCompactList}\small\item\em Abaqus load button slot. \item\end{DoxyCompactList}\item 
+\hypertarget{classgui_1_1_main_window_a256bb2202375fc3309ae5543dc8ffc8f}{
+void \hyperlink{classgui_1_1_main_window_a256bb2202375fc3309ae5543dc8ffc8f}{loadDicom} ()}
+\label{classgui_1_1_main_window_a256bb2202375fc3309ae5543dc8ffc8f}
+
+\begin{DoxyCompactList}\small\item\em Dicom load button slot. \item\end{DoxyCompactList}\item 
+\hypertarget{classgui_1_1_main_window_a0ae17d7d51bd4549b37a6d07165203ca}{
+void \hyperlink{classgui_1_1_main_window_a0ae17d7d51bd4549b37a6d07165203ca}{loadMetafile} ()}
+\label{classgui_1_1_main_window_a0ae17d7d51bd4549b37a6d07165203ca}
+
+\begin{DoxyCompactList}\small\item\em Metaimage load button slot. \item\end{DoxyCompactList}\item 
+void \hyperlink{classgui_1_1_main_window_ab8feef1bc2150a62f309cac1fc98b1f2}{extrusionSliderChanged} (int value)
+\begin{DoxyCompactList}\small\item\em Extrusion slider slot. \item\end{DoxyCompactList}\item 
+\hypertarget{classgui_1_1_main_window_a972f3a47296041eb91d74163e5940ac3}{
+void \hyperlink{classgui_1_1_main_window_a972f3a47296041eb91d74163e5940ac3}{exportExtrudedImage} ()}
+\label{classgui_1_1_main_window_a972f3a47296041eb91d74163e5940ac3}
+
+\begin{DoxyCompactList}\small\item\em Dicom export slot. \item\end{DoxyCompactList}\item 
+\hypertarget{classgui_1_1_main_window_a9ac823ee2e8cc81201e3601b8478c92c}{
+void \hyperlink{classgui_1_1_main_window_a9ac823ee2e8cc81201e3601b8478c92c}{exportAnsys} ()}
+\label{classgui_1_1_main_window_a9ac823ee2e8cc81201e3601b8478c92c}
+
+\begin{DoxyCompactList}\small\item\em Ansys export slot. \item\end{DoxyCompactList}\item 
+\hypertarget{classgui_1_1_main_window_a174e0d0ab437a2408b385b35798dd659}{
+void \hyperlink{classgui_1_1_main_window_a174e0d0ab437a2408b385b35798dd659}{exportAbaqus} ()}
+\label{classgui_1_1_main_window_a174e0d0ab437a2408b385b35798dd659}
+
+\begin{DoxyCompactList}\small\item\em Abaqus export slot. \item\end{DoxyCompactList}\item 
+\hypertarget{classgui_1_1_main_window_ab0fc116fbb9cb1df7c2f7dfd019402ab}{
+void \hyperlink{classgui_1_1_main_window_ab0fc116fbb9cb1df7c2f7dfd019402ab}{run} ()}
+\label{classgui_1_1_main_window_ab0fc116fbb9cb1df7c2f7dfd019402ab}
+
+\begin{DoxyCompactList}\small\item\em Run button slot. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classgui_1_1_main_window_a9b53ad68c9a10d546ce4b4d171413e99}{
+void \hyperlink{classgui_1_1_main_window_a9b53ad68c9a10d546ce4b4d171413e99}{loadMesh} ()}
+\label{classgui_1_1_main_window_a9b53ad68c9a10d546ce4b4d171413e99}
+
+\begin{DoxyCompactList}\small\item\em Loads the mesh into the GUI. \item\end{DoxyCompactList}\item 
+\hypertarget{classgui_1_1_main_window_afbfceb6a660dff0cc5938e1783df41b4}{
+void \hyperlink{classgui_1_1_main_window_afbfceb6a660dff0cc5938e1783df41b4}{loadCtImage} ()}
+\label{classgui_1_1_main_window_afbfceb6a660dff0cc5938e1783df41b4}
+
+\begin{DoxyCompactList}\small\item\em Loads the CT image into the GUI. \item\end{DoxyCompactList}\item 
+void \hyperlink{classgui_1_1_main_window_ad47a9433cd59b71e66643004d182907d}{showMessage} (std::string msg)
+\begin{DoxyCompactList}\small\item\em Displays a message to the user. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classgui_1_1_main_window_a85d3a7d16217e99e0fedcf0c65107f99}{checkLoadComplete} ()
+\begin{DoxyCompactList}\small\item\em Checks if both the \hyperlink{classmesh_1_1_mesh}{mesh::Mesh} and \hyperlink{classctimage_1_1_c_t_image}{ctimage::CTImage} are loaded. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classgui_1_1_main_window_a8fc767f398e4bebf05af19574db9fb0e}{
+vtkSmartPointer$<$ vtkRenderer $>$ \hyperlink{classgui_1_1_main_window_a8fc767f398e4bebf05af19574db9fb0e}{renderer}}
+\label{classgui_1_1_main_window_a8fc767f398e4bebf05af19574db9fb0e}
+
+\begin{DoxyCompactList}\small\item\em The renderer. \item\end{DoxyCompactList}\item 
+\hypertarget{classgui_1_1_main_window_a2e5976958b9de74939664b970a1c6be1}{
+vtkSmartPointer$<$ vtkActor $>$ \hyperlink{classgui_1_1_main_window_a2e5976958b9de74939664b970a1c6be1}{femModelActor}}
+\label{classgui_1_1_main_window_a2e5976958b9de74939664b970a1c6be1}
+
+\begin{DoxyCompactList}\small\item\em The FEM model (mesh) actor. \item\end{DoxyCompactList}\item 
+\hypertarget{classgui_1_1_main_window_a49c55c30152f0eb436de815d2ab65c4d}{
+vtkSmartPointer$<$ vtkActor $>$ \hyperlink{classgui_1_1_main_window_a49c55c30152f0eb436de815d2ab65c4d}{ctActor}}
+\label{classgui_1_1_main_window_a49c55c30152f0eb436de815d2ab65c4d}
+
+\begin{DoxyCompactList}\small\item\em The CT image model / isosurface actor. \item\end{DoxyCompactList}\item 
+\hypertarget{classgui_1_1_main_window_aaa081fb46c3e494dbdba6f15b1a54095}{
+vtkSmartPointer$<$ vtkActor $>$ \hyperlink{classgui_1_1_main_window_aaa081fb46c3e494dbdba6f15b1a54095}{extrudedCtActor}}
+\label{classgui_1_1_main_window_aaa081fb46c3e494dbdba6f15b1a54095}
+
+\begin{DoxyCompactList}\small\item\em The extruded CT image model / isosurface actor. \item\end{DoxyCompactList}\item 
+\hypertarget{classgui_1_1_main_window_a55e9ef04df1730c3c614f6ed1ed648de}{
+vtkSmartPointer$<$ \hyperlink{classvtk_prop_assembly}{vtkPropAssembly} $>$ \hyperlink{classgui_1_1_main_window_a55e9ef04df1730c3c614f6ed1ed648de}{assignmentActor}}
+\label{classgui_1_1_main_window_a55e9ef04df1730c3c614f6ed1ed648de}
+
+\begin{DoxyCompactList}\small\item\em The assignment result actor. \item\end{DoxyCompactList}\item 
+\hypertarget{classgui_1_1_main_window_a6dcbdf1bcf22df87077fa31aedc2da15}{
+vtkSmartPointer$<$ vtkLegendScaleActor $>$ \hyperlink{classgui_1_1_main_window_a6dcbdf1bcf22df87077fa31aedc2da15}{scaleActor}}
+\label{classgui_1_1_main_window_a6dcbdf1bcf22df87077fa31aedc2da15}
+
+\begin{DoxyCompactList}\small\item\em The scale actor. \item\end{DoxyCompactList}\item 
+\hypertarget{classgui_1_1_main_window_a8682deb203079f8f3f5d5df705e60703}{
+Ui::MainWindow $\ast$ \hyperlink{classgui_1_1_main_window_a8682deb203079f8f3f5d5df705e60703}{ui}}
+\label{classgui_1_1_main_window_a8682deb203079f8f3f5d5df705e60703}
+
+\begin{DoxyCompactList}\small\item\em The QT form interface. \item\end{DoxyCompactList}\item 
+\hypertarget{classgui_1_1_main_window_a3c687d09e6ac3432b3660bf6c0c1783f}{
+QSharedPointer$<$ \hyperlink{classmesh_1_1_mesh}{Mesh} $>$ \hyperlink{classgui_1_1_main_window_a3c687d09e6ac3432b3660bf6c0c1783f}{mesh}}
+\label{classgui_1_1_main_window_a3c687d09e6ac3432b3660bf6c0c1783f}
+
+\begin{DoxyCompactList}\small\item\em The loaded \hyperlink{classmesh_1_1_mesh}{mesh::Mesh}. \item\end{DoxyCompactList}\item 
+\hypertarget{classgui_1_1_main_window_ad25359ec4b7f6d23d292c3cf5d3e3e36}{
+QSharedPointer$<$ \hyperlink{classctimage_1_1_c_t_image}{CTImage} $>$ \hyperlink{classgui_1_1_main_window_ad25359ec4b7f6d23d292c3cf5d3e3e36}{ctImage}}
+\label{classgui_1_1_main_window_ad25359ec4b7f6d23d292c3cf5d3e3e36}
+
+\begin{DoxyCompactList}\small\item\em The loaded \hyperlink{classctimage_1_1_c_t_image}{ctimage::CTImage}. \item\end{DoxyCompactList}\item 
+\hypertarget{classgui_1_1_main_window_a301d15abf322ace147c5d6f20093830c}{
+QSharedPointer$<$ \hyperlink{classctimage_1_1_c_t_image}{CTImage} $>$ \hyperlink{classgui_1_1_main_window_a301d15abf322ace147c5d6f20093830c}{extrudedCtImage}}
+\label{classgui_1_1_main_window_a301d15abf322ace147c5d6f20093830c}
+
+\begin{DoxyCompactList}\small\item\em The extruded \hyperlink{classctimage_1_1_c_t_image}{ctimage::CTImage}. \item\end{DoxyCompactList}\item 
+\hypertarget{classgui_1_1_main_window_aebdf130c1f7a497215c52bad94d71975}{
+int \hyperlink{classgui_1_1_main_window_aebdf130c1f7a497215c52bad94d71975}{interpolationMethod}}
+\label{classgui_1_1_main_window_aebdf130c1f7a497215c52bad94d71975}
+
+\begin{DoxyCompactList}\small\item\em The interpolation method. \item\end{DoxyCompactList}\item 
+\hypertarget{classgui_1_1_main_window_ab4cab84ee3d3b9318a129ba7f456837c}{
+int \hyperlink{classgui_1_1_main_window_ab4cab84ee3d3b9318a129ba7f456837c}{assignmentMethod}}
+\label{classgui_1_1_main_window_ab4cab84ee3d3b9318a129ba7f456837c}
+
+\begin{DoxyCompactList}\small\item\em The assignment method. \item\end{DoxyCompactList}\item 
+\hypertarget{classgui_1_1_main_window_ad1fbd0a0da67c0e8f3378ee0415dfaa1}{
+QSharedPointer$<$ \hyperlink{classassignment_1_1_node_property_assigner}{assignment::NodePropertyAssigner} $>$ \hyperlink{classgui_1_1_main_window_ad1fbd0a0da67c0e8f3378ee0415dfaa1}{nodeAssigner}}
+\label{classgui_1_1_main_window_ad1fbd0a0da67c0e8f3378ee0415dfaa1}
+
+\begin{DoxyCompactList}\small\item\em The node assigner. \item\end{DoxyCompactList}\item 
+\hypertarget{classgui_1_1_main_window_a2f296c603ff5f915b6023370fb87acfd}{
+QSharedPointer$<$ \hyperlink{classassignment_1_1_element_property_assigner}{assignment::ElementPropertyAssigner} $>$ \hyperlink{classgui_1_1_main_window_a2f296c603ff5f915b6023370fb87acfd}{elementAssigner}}
+\label{classgui_1_1_main_window_a2f296c603ff5f915b6023370fb87acfd}
+
+\begin{DoxyCompactList}\small\item\em The element assigner. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class provides the main application window. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classgui_1_1_main_window_a712499e7b9b3c9d440d7b19a8865fc9f}{
+\index{gui::MainWindow@{gui::MainWindow}!MainWindow@{MainWindow}}
+\index{MainWindow@{MainWindow}!gui::MainWindow@{gui::MainWindow}}
+\subsubsection[{MainWindow}]{\setlength{\rightskip}{0pt plus 5cm}gui::MainWindow::MainWindow (
+\begin{DoxyParamCaption}
+\item[{QWidget $\ast$}]{ parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}
+\label{classgui_1_1_main_window_a712499e7b9b3c9d440d7b19a8865fc9f}
+
+
+Creates a new GUI window. 
+
+\begin{DoxyNote}{Note}
+The form is loaded from the QT form file mainwindow.ui 
+\end{DoxyNote}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classgui_1_1_main_window_a85d3a7d16217e99e0fedcf0c65107f99}{
+\index{gui::MainWindow@{gui::MainWindow}!checkLoadComplete@{checkLoadComplete}}
+\index{checkLoadComplete@{checkLoadComplete}!gui::MainWindow@{gui::MainWindow}}
+\subsubsection[{checkLoadComplete}]{\setlength{\rightskip}{0pt plus 5cm}bool gui::MainWindow::checkLoadComplete (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classgui_1_1_main_window_a85d3a7d16217e99e0fedcf0c65107f99}
+
+
+Checks if both the \hyperlink{classmesh_1_1_mesh}{mesh::Mesh} and \hyperlink{classctimage_1_1_c_t_image}{ctimage::CTImage} are loaded. 
+
+\begin{DoxyReturn}{Returns}
+True if both the \hyperlink{classmesh_1_1_mesh}{mesh::Mesh} and \hyperlink{classctimage_1_1_c_t_image}{ctimage::CTImage} are loaded 
+\end{DoxyReturn}
+\hypertarget{classgui_1_1_main_window_ab8feef1bc2150a62f309cac1fc98b1f2}{
+\index{gui::MainWindow@{gui::MainWindow}!extrusionSliderChanged@{extrusionSliderChanged}}
+\index{extrusionSliderChanged@{extrusionSliderChanged}!gui::MainWindow@{gui::MainWindow}}
+\subsubsection[{extrusionSliderChanged}]{\setlength{\rightskip}{0pt plus 5cm}void gui::MainWindow::extrusionSliderChanged (
+\begin{DoxyParamCaption}
+\item[{int}]{ value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classgui_1_1_main_window_ab8feef1bc2150a62f309cac1fc98b1f2}
+
+
+Extrusion slider slot. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em The}]slider's value \end{DoxyParams}
+\hypertarget{classgui_1_1_main_window_ad47a9433cd59b71e66643004d182907d}{
+\index{gui::MainWindow@{gui::MainWindow}!showMessage@{showMessage}}
+\index{showMessage@{showMessage}!gui::MainWindow@{gui::MainWindow}}
+\subsubsection[{showMessage}]{\setlength{\rightskip}{0pt plus 5cm}void gui::MainWindow::showMessage (
+\begin{DoxyParamCaption}
+\item[{std::string}]{ msg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classgui_1_1_main_window_ad47a9433cd59b71e66643004d182907d}
+
+
+Displays a message to the user. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em The}]message to be displayed \end{DoxyParams}
+\hypertarget{classgui_1_1_main_window_ac3f9bab09dfb3646b0ee1be0bd613f20}{
+\index{gui::MainWindow@{gui::MainWindow}!toggleAssignment@{toggleAssignment}}
+\index{toggleAssignment@{toggleAssignment}!gui::MainWindow@{gui::MainWindow}}
+\subsubsection[{toggleAssignment}]{\setlength{\rightskip}{0pt plus 5cm}void gui::MainWindow::toggleAssignment (
+\begin{DoxyParamCaption}
+\item[{int}]{ state}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classgui_1_1_main_window_ac3f9bab09dfb3646b0ee1be0bd613f20}
+
+
+Assignment result checkbox slot. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em state}]Qt::Checked if the checkbox is in checked state \end{DoxyParams}
+\hypertarget{classgui_1_1_main_window_a3891bbf7215a4c190a6c5392dadb0a29}{
+\index{gui::MainWindow@{gui::MainWindow}!toggleAssignmentMethod@{toggleAssignmentMethod}}
+\index{toggleAssignmentMethod@{toggleAssignmentMethod}!gui::MainWindow@{gui::MainWindow}}
+\subsubsection[{toggleAssignmentMethod}]{\setlength{\rightskip}{0pt plus 5cm}void gui::MainWindow::toggleAssignmentMethod (
+\begin{DoxyParamCaption}
+\item[{bool}]{ t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classgui_1_1_main_window_a3891bbf7215a4c190a6c5392dadb0a29}
+
+
+Assignment method switch slot. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em t}]\end{DoxyParams}
+\hypertarget{classgui_1_1_main_window_a55e08f5a8915bb4838bdbd31b2bdaf4c}{
+\index{gui::MainWindow@{gui::MainWindow}!toggleCTImage@{toggleCTImage}}
+\index{toggleCTImage@{toggleCTImage}!gui::MainWindow@{gui::MainWindow}}
+\subsubsection[{toggleCTImage}]{\setlength{\rightskip}{0pt plus 5cm}void gui::MainWindow::toggleCTImage (
+\begin{DoxyParamCaption}
+\item[{int}]{ state}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classgui_1_1_main_window_a55e08f5a8915bb4838bdbd31b2bdaf4c}
+
+
+CT image checkbox slot. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em state}]Qt::Checked if the checkbox is in checked state \end{DoxyParams}
+\hypertarget{classgui_1_1_main_window_a5102f72743b8fd8f6989eb339067e73f}{
+\index{gui::MainWindow@{gui::MainWindow}!toggleExtrudedCTImage@{toggleExtrudedCTImage}}
+\index{toggleExtrudedCTImage@{toggleExtrudedCTImage}!gui::MainWindow@{gui::MainWindow}}
+\subsubsection[{toggleExtrudedCTImage}]{\setlength{\rightskip}{0pt plus 5cm}void gui::MainWindow::toggleExtrudedCTImage (
+\begin{DoxyParamCaption}
+\item[{int}]{ state}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classgui_1_1_main_window_a5102f72743b8fd8f6989eb339067e73f}
+
+
+Extruded CT image checkbox slot. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em state}]Qt::Checked if the checkbox is in checked state \end{DoxyParams}
+\hypertarget{classgui_1_1_main_window_ab6bc66d6d29c8ce9c25e42d23ca5796d}{
+\index{gui::MainWindow@{gui::MainWindow}!toggleFEMModel@{toggleFEMModel}}
+\index{toggleFEMModel@{toggleFEMModel}!gui::MainWindow@{gui::MainWindow}}
+\subsubsection[{toggleFEMModel}]{\setlength{\rightskip}{0pt plus 5cm}void gui::MainWindow::toggleFEMModel (
+\begin{DoxyParamCaption}
+\item[{int}]{ state}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classgui_1_1_main_window_ab6bc66d6d29c8ce9c25e42d23ca5796d}
+
+
+FEM model checkbox slot. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em state}]Qt::Checked if the checkbox is in checked state \end{DoxyParams}
+\hypertarget{classgui_1_1_main_window_a9d49a35ea4419d69f2f89950a8ffbdda}{
+\index{gui::MainWindow@{gui::MainWindow}!toggleInterpolationMethod@{toggleInterpolationMethod}}
+\index{toggleInterpolationMethod@{toggleInterpolationMethod}!gui::MainWindow@{gui::MainWindow}}
+\subsubsection[{toggleInterpolationMethod}]{\setlength{\rightskip}{0pt plus 5cm}void gui::MainWindow::toggleInterpolationMethod (
+\begin{DoxyParamCaption}
+\item[{bool}]{ t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classgui_1_1_main_window_a9d49a35ea4419d69f2f89950a8ffbdda}
+
+
+Interpolation method switch slot. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em t}]\end{DoxyParams}
+\hypertarget{classgui_1_1_main_window_a4646ba0d34c86dfe969b285b00c30d5e}{
+\index{gui::MainWindow@{gui::MainWindow}!toggleScale@{toggleScale}}
+\index{toggleScale@{toggleScale}!gui::MainWindow@{gui::MainWindow}}
+\subsubsection[{toggleScale}]{\setlength{\rightskip}{0pt plus 5cm}void gui::MainWindow::toggleScale (
+\begin{DoxyParamCaption}
+\item[{int}]{ state}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{classgui_1_1_main_window_a4646ba0d34c86dfe969b285b00c30d5e}
+
+
+Scale checkbox slot. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em state}]Qt::Checked if the checkbox is in checked state \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+gui/MainWindow.h\item 
+gui/MainWindow.cxx\end{DoxyCompactItemize}
